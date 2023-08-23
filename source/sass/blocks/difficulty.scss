@@ -1,3 +1,19 @@
 .difficulty {
   display: flex;
+  gap: 10px;
+
+  & .difficulty__item {
+    padding: 14px 21px;
+    border: 1px solid $color-half-transparent;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  & .difficulty__item svg {
+    transform: translateY(15%);
+  }
+
+  & .difficulty__item span {
+    padding-left: 5px;
+  }
 }

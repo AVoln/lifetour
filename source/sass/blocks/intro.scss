@@ -1,12 +1,17 @@
 .intro {
+  position: relative;
+
   @include vp-1200 {
-    padding-top: 182px;
+    padding: 182px 120px 80px;
     color: $color-default-white;
   }
 
   &__title {
+    position: relative;
+    z-index: 1;
+
     @include vp-1200 {
-      width: 70%;
+      width: 770px;
     }
   }
 
@@ -18,7 +23,7 @@
 
   &__text {
     @include vp-1200 {
-      width: 35%;
+      width: 400px;
       padding-top: 24px;
     }
   }
@@ -35,10 +40,71 @@
   &__button {
     display: block;
     padding: 21px 0;
-    background-color:  $color-navy-blue;
+    background-color: $color-navy-blue;
     color: $color-default-white;
     font-weight: 500;
     line-height: 16px;
   }
 
+  &__media.video-player {
+    position: absolute;
+    z-index: 0;
+
+    @include vp-1200 {
+      top: 300px;
+      right: 120px;
+      width: 482px;
+      height: 317px;
+    }
+
+    @include vp-1199 {
+      width: 442px;
+      height: 300px;
+    }
+  }
+
+  &__media iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-default-white;
+    width: 100%;
+    height: 100%;
+
+    & svg {
+      transform: translate(380%,235%);
+    }
+
+    &:hover circle {
+      stroke: $color-resolution-blue;
+      fill-opacity: 0;
+    }
+
+    &:hover path {
+      stroke: $color-default-black;
+      stroke-opacity: 1;
+    }
+
+    &:active {
+      color: $color-resolution-blue;
+    }
+
+    &:active circle {
+      fill-opacity: 1;
+    }
+
+    &:active path {
+      stroke: $color-default-white;
+      stroke-opacity: 0;
+    }
+  }
 }

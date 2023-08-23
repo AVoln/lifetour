@@ -1278,6 +1278,15 @@ button,
 @media (min-width: 1200px) {
   .hero__intro-container {
     background-color: #5677a2;
+    background-image: url(../../img/kavkaz_desktop.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__intro-container {
+    background-image: url(../../img/kavkaz_desktop@2x.webp);
   }
 }
 
@@ -1323,15 +1332,22 @@ button,
   }
 }
 
+.intro {
+  position: relative;
+}
 @media (min-width: 1200px) {
   .intro {
-    padding-top: 182px;
+    padding: 182px 120px 80px;
     color: #ffffff;
   }
 }
+.intro__title {
+  position: relative;
+  z-index: 1;
+}
 @media (min-width: 1200px) {
   .intro__title {
-    width: 70%;
+    width: 770px;
   }
 }
 .intro__title h1 {
@@ -1341,7 +1357,7 @@ button,
 }
 @media (min-width: 1200px) {
   .intro__text {
-    width: 35%;
+    width: 400px;
     padding-top: 24px;
   }
 }
@@ -1362,6 +1378,65 @@ button,
   font-weight: 500;
   line-height: 16px;
 }
+.intro__media.video-player {
+  position: absolute;
+  z-index: 0;
+}
+@media (min-width: 1200px) {
+  .intro__media.video-player {
+    top: 300px;
+    right: 120px;
+    width: 482px;
+    height: 317px;
+  }
+}
+@media (max-width: 1199px) {
+  .intro__media.video-player {
+    width: 442px;
+    height: 300px;
+  }
+}
+.intro__media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.intro__video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+.intro__video-play-button svg {
+  -webkit-transform: translate(380%, 235%);
+      -ms-transform: translate(380%, 235%);
+          transform: translate(380%, 235%);
+}
+.intro__video-play-button:hover circle {
+  stroke: #1c3374;
+  fill-opacity: 0;
+}
+.intro__video-play-button:hover path {
+  stroke: #000000;
+  stroke-opacity: 1;
+}
+.intro__video-play-button:active {
+  color: #1c3374;
+}
+.intro__video-play-button:active circle {
+  fill-opacity: 1;
+}
+.intro__video-play-button:active path {
+  stroke: #ffffff;
+  stroke-opacity: 0;
+}
 
 .intro-footer {
   display: -webkit-box;
@@ -1381,6 +1456,21 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 10px;
+}
+.difficulty .difficulty__item {
+  padding: 14px 21px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  line-height: 12px;
+}
+.difficulty .difficulty__item svg {
+  -webkit-transform: translateY(15%);
+      -ms-transform: translateY(15%);
+          transform: translateY(15%);
+}
+.difficulty .difficulty__item span {
+  padding-left: 5px;
 }
 
 /* @mixin hover-focus {
