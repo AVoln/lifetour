@@ -1,0 +1,44 @@
+.intro {
+  @include vp-1200 {
+    padding-top: 182px;
+    color: $color-default-white;
+  }
+
+  &__title {
+    @include vp-1200 {
+      width: 70%;
+    }
+  }
+
+  &__title h1 {
+    font-size: 77px;
+    font-weight: 800;
+    line-height: 77px;
+  }
+
+  &__text {
+    @include vp-1200 {
+      width: 35%;
+      padding-top: 24px;
+    }
+  }
+
+  &__button-container {
+    text-align: center;
+
+    @include vp-1200 {
+      width: 220px;
+      padding-top: 35px;
+    }
+  }
+
+  &__button {
+    display: block;
+    padding: 21px 0;
+    background-color:  $color-navy-blue;
+    color: $color-default-white;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+}

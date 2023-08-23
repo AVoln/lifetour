@@ -1,0 +1,14 @@
+.menu {
+  &__list {
+    @include vp-1200 {
+      display: flex;
+      color: $color-default-white;
+    }
+  }
+
+  &__item {
+    @include vp-1200 {
+      padding: 0 15px;
+    }
+  }
+}

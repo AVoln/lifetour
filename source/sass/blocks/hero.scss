@@ -1,0 +1,15 @@
+.hero {
+  &__header-container {
+    @include vp-1200 {
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+  }
+
+  &__intro-container {
+    @include vp-1200 {
+      background-color: $color-san-marino;
+    }
+  }
+}

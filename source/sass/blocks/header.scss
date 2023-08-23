@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include vp-1200 {
+    margin: 0 auto;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    padding: 0 120px;
+  }
+
+  &__phone {
+    @include vp-1200 {
+      color: $color-default-white;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

@@ -16,8 +16,8 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-placeholder;
-  color: $color-default-black;
+  font-family: $ff-montserrat;
+  color: $color-elephant;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,6 +39,17 @@ a {
   text-decoration: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 img,
 video {
   display: block;
@@ -48,6 +59,13 @@ video {
 
 textarea {
   resize: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 // chrome autofill background removal

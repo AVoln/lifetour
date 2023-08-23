@@ -1,0 +1,8 @@
+.intro-footer {
+  display: flex;
+  justify-content: space-between;
+
+  @include vp-1200 {
+    padding-top: 150px;
+  }
+}
