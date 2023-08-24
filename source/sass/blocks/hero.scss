@@ -7,19 +7,66 @@
     }
   }
 
+  &__intro-wrapper {
+  }
+
   &__intro-container {
     @include vp-1200 {
       background-color: $color-san-marino;
-      background-image: url(../../img/kavkaz_desktop.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+    }
+  }
 
-      @media
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: url(../../img/kavkaz_desktop@2x.webp);
-      }
+  &__intro-container--kavkaz {
+    background-image: $gradient-dark-bacground, url(../../img/kavkaz_desktop.webp);
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+      background-image: $gradient-dark-bacground, url(../../img/kavkaz_desktop@2x.webp);
+    }
+  }
+
+  &__intro-container--kavkaz .intro__text {
+    @include vp-1200 {
+      width: 400px;
+      padding-top: 24px;
+    }
+  }
+
+  &__intro-container--kamchatka {
+    background-image: $gradient-dark-bacground, url(../../img/kamchatka_desktop.webp);
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+      background-image: $gradient-dark-bacground, url(../../img/kamchatka_desktop@2x.webp);
+    }
+  }
+
+  &__intro-container--kamchatka .intro__text {
+    @include vp-1200 {
+      width: 500px;
+      padding-top: 24px;
+    }
+  }
+
+  &__intro-container--altay {
+    background-image: $gradient-dark-bacground, url(../../img/altay_desktop.webp);
+
+    @media
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+      background-image: $gradient-dark-bacground, url(../../img/altay_desktop@2x.webp);
+    }
+  }
+
+  &__intro-container--altay .intro__text {
+    @include vp-1200 {
+      width: 450px;
+      padding-top: 24px;
     }
   }
 }
