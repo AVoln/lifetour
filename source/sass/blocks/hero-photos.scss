@@ -1,0 +1,21 @@
+.hero-photos {
+  &__hero-photo {
+    @include vp-1200 {
+      position: absolute;
+    }
+  }
+
+  &__hero-photo--front {
+    @include vp-1200 {
+      bottom: 100px;
+      right: 100px;
+    }
+  }
+
+  &__hero-photo--back {
+    @include vp-1200 {
+      bottom: 100px;
+      right: 200px;
+    }
+  }
+}
