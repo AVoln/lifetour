@@ -4,9 +4,15 @@ const heroSwiper = document.querySelector('.swiper');
 const initSwiper = () => {
   if (heroSwiper) {
     const swiper = new Swiper(heroSwiper, {
+      pagination: {
+        el: '.pagination-swiper',
+        clickable: true,
+      },
+
+      simulateTouch: false,
 
     });
   }
 };
 
-export {initSwiper};
+export { initSwiper };

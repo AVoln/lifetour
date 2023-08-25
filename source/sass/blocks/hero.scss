@@ -7,25 +7,39 @@
     }
   }
 
-  &__intro-wrapper {
-  }
-
   &__intro-container {
-    @include vp-1200 {
-      background-color: $color-san-marino;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+    background-color: $color-san-marino;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   &__intro-container--kavkaz {
-    background-image: $gradient-dark-bacground, url(../../img/kavkaz_desktop.webp);
+    @include vp-1200 {
+      background-image: $gradient-dark-bacground, url(../../img/kavkaz_desktop.webp);
 
-    @media
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx) {
-      background-image: $gradient-dark-bacground, url(../../img/kavkaz_desktop@2x.webp);
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+        background-image: $gradient-dark-bacground, url(../../img/kavkaz_desktop@2x.webp);
+      }
+    }
+
+    @include vp-1199 {
+      background-image: $gradient-dark-bacground, url(../../img/kavkaz_tablet.webp);
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+        background-image: $gradient-dark-bacground, url(../../img/kavkaz_tablet@2x.webp);
+      }
+    }
+
+    @include vp-767 {
+      background-image: $gradient-dark-bacground, url(../../img/kavkaz_mobile.webp);
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+        background-image: $gradient-dark-bacground, url(../../img/kavkaz_mobile@2x.webp);
+      }
     }
   }
 
@@ -34,15 +48,43 @@
       width: 400px;
       padding-top: 24px;
     }
+
+    @include vp-1199 {
+      width: 430px;
+      padding-top: 15px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 
   &__intro-container--kamchatka {
-    background-image: $gradient-dark-bacground, url(../../img/kamchatka_desktop.webp);
+    @include vp-1200 {
+      background-image: $gradient-dark-bacground, url(../../img/kamchatka_desktop.webp);
 
-    @media
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx) {
-      background-image: $gradient-dark-bacground, url(../../img/kamchatka_desktop@2x.webp);
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+        background-image: $gradient-dark-bacground, url(../../img/kamchatka_desktop@2x.webp);
+      }
+    }
+
+    @include vp-1199 {
+      background-image: $gradient-dark-bacground, url(../../img/kamchatka_tablet.webp);
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+        background-image: $gradient-dark-bacground, url(../../img/kamchatka_tablet@2x.webp);
+      }
+    }
+
+    @include vp-767 {
+      background-image: $gradient-dark-bacground, url(../../img/kamchatka_mobile.webp);
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+        background-image: $gradient-dark-bacground, url(../../img/kamchatka_mobile@2x.webp);
+      }
     }
   }
 
@@ -51,15 +93,61 @@
       width: 500px;
       padding-top: 24px;
     }
+
+    @include vp-1199 {
+      width: 460px;
+      padding-top: 15px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
+  &__intro-container--kamchatka .intro__text span br {
+    display: none;
+
+    @include vp-767 {
+      display: inline;
+    }
   }
 
   &__intro-container--altay {
-    background-image: $gradient-dark-bacground, url(../../img/altay_desktop.webp);
+    @include vp-1200 {
+      background-image: $gradient-dark-bacground, url(../../img/altay_desktop.webp);
 
-    @media
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx) {
-      background-image: $gradient-dark-bacground, url(../../img/altay_desktop@2x.webp);
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+        background-image: $gradient-dark-bacground, url(../../img/altay_desktop@2x.webp);
+      }
+    }
+
+    @include vp-1199 {
+      background-image: $gradient-dark-bacground, url(../../img/altay_tablet.webp);
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+        background-image: $gradient-dark-bacground, url(../../img/altay_tablet@2x.webp);
+      }
+    }
+
+    @include vp-767 {
+      background-image: $gradient-dark-bacground, url(../../img/altay_mobile.webp);
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx) {
+        background-image: $gradient-dark-bacground, url(../../img/altay_mobile@2x.webp);
+      }
+    }
+  }
+
+  &__intro-container--altay .intro__title {
+    @include vp-1199 {
+      width: 670px;
+    }
+
+    @include vp-767 {
+      width: 100%;
     }
   }
 
@@ -67,6 +155,15 @@
     @include vp-1200 {
       width: 450px;
       padding-top: 24px;
+    }
+
+    @include vp-1199 {
+      width: 460px;
+      padding-top: 15px;
+    }
+
+    @include vp-767 {
+      width: 100%;
     }
   }
 }

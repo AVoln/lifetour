@@ -1,0 +1,7 @@
+.audio-player {
+  & iframe {
+    @include vp-1199 {
+      top: 340px;
+    }
+  }
+}
