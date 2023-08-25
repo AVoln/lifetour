@@ -1,0 +1,5 @@
+.video-player {
+  @include vp-767 {
+    display: none;
+  }
+}
