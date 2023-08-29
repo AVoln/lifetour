@@ -15,13 +15,10 @@
   }
 
   @include vp-1199 {
-    margin: 0 auto;
     position: absolute;
     top: 30px;
     width: 100%;
-    padding: 0 45px;
     z-index: 2;
-    max-width: 768px;
     left: 0;
     right: 0;
   }
@@ -39,6 +36,25 @@
 
     @include vp-1199 {
       padding: 6px 0;
+    }
+
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    @include vp-1200 {
+      display: contents;
+    }
+
+    @include vp-1199 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 0 45px;
     }
 
     @include vp-767 {
@@ -94,6 +110,10 @@
   }
 
   &__phone-container {
+    @include vp-1200 {
+      order: 2;
+    }
+
     @include vp-767 {
       padding: 36px 0 0;
     }
@@ -127,8 +147,38 @@
   }
 
   &--menu-opened .menu {
-    display: block;
-    position: absolute;
+    @include vp-1199 {
+      display: block;
+      position: absolute;
+      width: 100%;
+      background-color: $color-default-white;
+      top: -30px;
+      padding: 124px 45px 70px;
+      z-index: -1;
+    }
+
+    @include vp-767 {
+      padding: 99px 15px 50px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &--menu-opened .menu::after {
+    content: "";
+    height: 100vh;
     width: 100%;
+    background-color: $color-dark-half-transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    @include vp-1199 {
+      margin-top: 70px;
+    }
+
+    @include vp-767 {
+      margin-top: 50px;
+    }
   }
 }

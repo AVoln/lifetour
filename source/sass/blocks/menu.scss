@@ -1,16 +1,40 @@
 .menu {
+@include vp-1200 {
+  max-width: 50%;
+}
+
   @include vp-1199 {
     display: none;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
   }
 
   @include vp-767 {
     display: none;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   &__list {
+    display: flex;
+
     @include vp-1200 {
-      display: flex;
       color: $color-default-white;
+      flex-wrap: wrap;
+    }
+
+    @include vp-1199 {
+      flex-direction: column;
+      gap: 26px;
+      max-width: 678px;
+      margin: 0 auto;
+    }
+
+    @include vp-767 {
+      gap: 22px;
     }
   }
 
