@@ -2464,15 +2464,23 @@ button,
     width: 100%;
     background-color: #ffffff;
     top: -30px;
-    padding: 124px 45px 70px;
     z-index: -1;
   }
 }
 @media (max-width: 767px) {
   .header--menu-opened .menu {
-    padding: 99px 15px 50px;
     left: 0;
     right: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .header--menu-opened .menu__list {
+    padding: 124px 45px 70px;
+  }
+}
+@media (max-width: 767px) {
+  .header--menu-opened .menu__list {
+    padding: 99px 15px 50px;
   }
 }
 .header--menu-opened .menu::after {
@@ -2483,16 +2491,6 @@ button,
   position: absolute;
   left: 0;
   right: 0;
-}
-@media (max-width: 1199px) {
-  .header--menu-opened .menu::after {
-    margin-top: 70px;
-  }
-}
-@media (max-width: 767px) {
-  .header--menu-opened .menu::after {
-    margin-top: 50px;
-  }
 }
 
 @media (min-width: 1200px) {
