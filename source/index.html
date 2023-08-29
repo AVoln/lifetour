@@ -19,16 +19,22 @@
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
-<body>
+<body class="nojs">
   <section class="hero">
-    <div class="hero__header-container container ">
+    <div class="hero__header-container">
       <header class="hero__header header">
-        <div class="header__logo">
-          <picture>
-            <source media="(min-width:1200px)" srcset="./img/logo/logo.svg" width="205" height="62">
-            <source media="(min-width:768px)" srcset="./img/logo/logo.svg" width="144" height="44">
-            <img src="./img/logo/logo.svg" width="112" height="34" alt="Лого lifetour.">
-          </picture>
+        <div class="header__wrapper">
+          <div class="header__toggle-container">
+            <button class="header__toggle" type="button" aria-label="Открыть меню."></button>
+          </div>
+          <a class="header__logo" href="index.html">
+            <svg width="205" height="62">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="header__phone-container">
+            <a class="header__phone" href="tel:88007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+          </div>
         </div>
         <div class="header__menu menu">
           <ul class="menu__list">
@@ -40,9 +46,7 @@
             <li class="menu__item">Контакты</li>
           </ul>
         </div>
-        <div class="header__phone-container">
-          <a class="header__phone" href="tel:88007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
-        </div>
+        <div class="header__menu-bcgr"></div>
       </header>
     </div>
 

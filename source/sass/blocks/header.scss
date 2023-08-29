@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   @include vp-1200 {
     margin: 0 auto;
@@ -10,13 +11,174 @@
     width: 100%;
     padding: 0 120px;
     z-index: 2;
+    max-width: 1440px;
+  }
+
+  @include vp-1199 {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    right: 0;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+    top: 15px;
+    align-items: normal
+  }
+
+  &__toggle-container {
+    @include vp-1200 {
+      display: none;
+    }
+
+    @include vp-1199 {
+      padding: 6px 0;
+    }
+
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+
+  &__wrapper {
+    @include vp-1200 {
+      display: contents;
+    }
+
+    @include vp-1199 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 0 45px;
+    }
+
+    @include vp-767 {
+      padding: 0;
+    }
+  }
+
+  &__toggle {
+    border: none;
+    background-color: $color-transparent;
+
+    @include vp-1199 {
+      background-image: url(../../img/svg/menu.svg);
+      background-repeat: no-repeat;
+      background-position: top;
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  &__logo {
+    color: $color-default-white;
+
+    @include vp-1199 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      right: 50%;
+      width: 144px;
+      height: 44px;
+      transform: translateX(-50%);
+    }
+
+    @include vp-767 {
+      transform: translateX(-13%);
+      left: auto;
+      right: 0;
+      width: 112px;
+      height: 34px;
+    }
+  }
+
+  &__logo svg {
+    @include vp-1199 {
+      width: 144px;
+      height: 44px;
+    }
+
+    @include vp-767 {
+      width: 112px;
+      height: 34px;
+    }
+  }
+
+  &__phone-container {
+    @include vp-1200 {
+      order: 2;
+    }
+
+    @include vp-767 {
+      padding: 36px 0 0;
+    }
   }
 
   &__phone {
-    @include vp-1200 {
-      color: $color-default-white;
-      font-size: 18px;
-      font-weight: 600;
+    color: $color-default-white;
+    font-size: 18px;
+    font-weight: 600;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  &--menu-opened .header__logo,
+  &--menu-opened .header__phone {
+    color: $color-elephant;
+  }
+
+  &--menu-opened .header__toggle {
+    @include vp-1199 {
+      background-image: url(../../img/svg/close.svg);
+      background-repeat: no-repeat;
+      background-position: top;
+      width: 22px;
+      height: 22px;
+      transform: translateY(20%);
+    }
+  }
+
+  &--menu-opened .menu {
+    @include vp-1199 {
+      display: block;
+      position: absolute;
+      width: 100%;
+      background-color: $color-default-white;
+      top: -30px;
+      padding: 124px 45px 70px;
+      z-index: -1;
+    }
+
+    @include vp-767 {
+      padding: 99px 15px 50px;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &--menu-opened .menu::after {
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background-color: $color-dark-half-transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    @include vp-1199 {
+      margin-top: 70px;
+    }
+
+    @include vp-767 {
+      margin-top: 50px;
     }
   }
 }

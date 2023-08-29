@@ -1,8 +1,15 @@
 .hero {
   &__header-container {
+    margin: 0 auto;
+
     @include vp-1200 {
+      position: relative;
+      max-width: 1440px;
       display: flex;
       justify-content: center;
+    }
+
+    @include vp-1199 {
       position: relative;
     }
   }
