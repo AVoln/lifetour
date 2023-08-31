@@ -714,8 +714,8 @@ template {
 }
 
 .swiper-pagination-bullet {
-  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
   display: inline-block;
   border-radius: 50%;
   border: 1px solid #fff;
@@ -2125,6 +2125,7 @@ button,
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: auto;
 }
 @media (min-width: 1200px) {
   .hero__intro-container--kavkaz {
@@ -2495,7 +2496,7 @@ button,
 
 @media (min-width: 1200px) {
   .menu {
-    max-width: 50%;
+    max-width: 80%;
   }
 }
 @media (max-width: 1199px) {
@@ -2556,6 +2557,8 @@ button,
 @media (min-width: 1200px) {
   .intro {
     padding: 182px 120px 80px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 1199px) {
@@ -2572,11 +2575,14 @@ button,
             align-items: center;
     padding: 174px 104px 80px;
     text-align: center;
+    height: 100%;
+    min-height: 1024px;
   }
 }
 @media (max-width: 767px) {
   .intro {
     padding: 139px 15px 40px;
+    min-height: 568px;
   }
 }
 .intro__title {
@@ -2646,6 +2652,11 @@ button,
     padding-top: 25px;
   }
 }
+@media (max-width: 767px) {
+  .intro__button-container {
+    width: 180px;
+  }
+}
 .intro__button {
   display: block;
   padding: 21px 0;
@@ -2653,6 +2664,11 @@ button,
   color: #ffffff;
   font-weight: 500;
   line-height: 16px;
+}
+@media (max-width: 767px) {
+  .intro__button {
+    padding: 18px 0;
+  }
 }
 .intro__media.video-player {
   position: absolute;
@@ -2668,9 +2684,8 @@ button,
 }
 @media (max-width: 1199px) {
   .intro__media.video-player {
-    top: 505px;
-    width: 442px;
-    height: 300px;
+    position: relative;
+    margin-top: 50px;
   }
 }
 .intro__media.audio-player {
@@ -2707,16 +2722,15 @@ button,
   color: #ffffff;
   width: 100%;
   height: 100%;
-}
-@media (max-width: 1199px) {
-  .intro__video-play-button {
-    left: 0;
-  }
-}
-.intro__video-play-button svg {
-  -webkit-transform: translate(380%, 235%);
-      -ms-transform: translate(380%, 235%);
-          transform: translate(380%, 235%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .intro__video-play-button:hover circle {
   stroke: #1c3374;
@@ -2752,12 +2766,8 @@ button,
 }
 @media (max-width: 1199px) {
   .intro-footer {
-    padding-top: 400px;
-  }
-}
-@media (max-width: 767px) {
-  .intro-footer {
-    padding-top: 104px;
+    position: absolute;
+    bottom: 50px;
   }
 }
 
@@ -2767,6 +2777,11 @@ button,
   display: flex;
   gap: 10px;
   width: 30%;
+}
+@media (min-width: 1200px) {
+  .difficulty {
+    min-width: 40%;
+  }
 }
 @media (max-width: 1199px) {
   .difficulty {
