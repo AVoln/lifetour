@@ -7,10 +7,7 @@
   }
 
   @include vp-1199 {
-    padding-top: 400px;
-  }
-
-  @include vp-767 {
-    padding-top: 104px;
+    position: absolute;
+    bottom: 50px;
   }
 }
