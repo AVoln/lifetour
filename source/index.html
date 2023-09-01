@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="LifeTour">
-  <title>LifeTour</title>
+  <title>LifeTour — организация походов в горы</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="img/favicons/favicon.svg">
-  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="img/pictures/favicons/favicon.svg">
+  <link rel="apple-touch-icon" href="img/pictures/favicons/apple-touch-icon.png">
   <link rel="preload" href="fonts/montserrat-light.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
@@ -20,210 +20,280 @@
 </head>
 
 <body class="nojs">
-  <section class="hero">
-    <div class="hero__header-container">
-      <header class="hero__header header">
-        <div class="header__wrapper">
-          <div class="header__toggle-container">
-            <button class="header__toggle" type="button" aria-label="Открыть меню."></button>
+  <div class="wrapper">
+    <section class="hero">
+      <div class="hero__header-container">
+        <header class="hero__header header">
+          <div class="header__wrapper">
+            <div class="header__toggle-container">
+              <button class="header__toggle" type="button" aria-label="Открыть меню."></button>
+            </div>
+            <a class="header__logo" href="index.html">
+              <svg width="205" height="62">
+                <use href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="header__phone-container">
+              <a class="header__phone" href="tel:88007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
+            </div>
           </div>
-          <a class="header__logo" href="index.html">
+          <div class="header__menu menu">
+            <ul class="menu__list">
+              <li>
+                <a class="menu__link" href="#">Туры</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">Обучение</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">О&nbsp;нас</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">Отзывы</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">Фотографии</a>
+              </li>
+              <li>
+                <a class="menu__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </header>
+      </div>
+
+      <div class="hero__intro-swiper swiper">
+        <div class="hero__intro-wrapper swiper-wrapper">
+
+          <div class="hero__intro-container hero__intro-container--kavkaz swiper-slide">
+            <div class="hero__intro intro">
+              <div class="intro__title">
+                <h2>Захватывающие вершины Кавказа</h2>
+              </div>
+              <div class="intro__text">
+                <span>
+                  В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите
+                  восход
+                  на&nbsp;вершину горы Чегет.
+                </span>
+              </div>
+              <div class="intro__button-container">
+                <a class="intro__button" href="#">Смотреть тур</a>
+              </div>
+              <div class="intro__media video-player" data-id="video"
+                data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/pictures/video-preview_desktop.webp 1x,
+                  img/pictures/video-preview_desktop@2x.webp 2x" width="482" height="317">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/pictures/video-preview_tablet.webp 1x,
+                  img/pictures/video-preview_tablet@2x.webp 2x" width="442" height="300">
+
+                  <source media="(min-width: 1200px)" srcset="img/pictures/video-preview_desktop.jpg 1x,
+                  img/pictures/video-preview_desktop@2x.jpg 2x" width="482" height="317">
+                  <img src="img/pictures/video-preview_tablet.jpg" srcset="img/pictures/video-preview_tablet@2x.jpg 2x"
+                    alt="Турист на вершине горы." width="442" height="300">
+                </picture>
+                <div class="intro__video-play-button" tabindex="0">
+                  <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="28" cy="28" r="27.5" fill="currentColor" fill-opacity="0.2" stroke="white" />
+                    <path d="M37 28L25 17V39L37 28Z" fill="white" stroke="white" stroke-opacity="0" />
+                  </svg>
+                </div>
+              </div>
+              <div class="intro__footer intro-footer">
+                <div class="intro-footer__difficulty difficulty">
+                  <div class="difficulty__item">
+                    <svg width="12" height="12">
+                      <use href="img/sprite.svg#moon"></use>
+                    </svg>
+                    <span>6 дней/5 ночей</span>
+                  </div>
+                  <div class="difficulty__item">
+                    <svg width="12" height="12">
+                      <use href="img/sprite.svg#level"></use>
+                    </svg>
+                    <span>Высокая сложность</span>
+                  </div>
+                </div>
+                <div class="intro-footer__pagination pagination-swiper">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__intro-container hero__intro-container--kamchatka swiper-slide">
+            <div class="hero__intro intro">
+              <div class="intro__title">
+                <h2>Невероятная природа Камчатки</h2>
+              </div>
+              <div class="intro__text">
+                <span>
+                  Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному
+                  из&nbsp;самых нетронутых уголков дикой <br>природы в&nbsp;мире.
+                </span>
+              </div>
+              <div class="intro__button-container">
+                <a class="intro__button" href="#">Смотреть тур</a>
+              </div>
+              <div class="intro__media hero-photos">
+                <div class="hero-photos__hero-photo hero-photos__hero-photo--back">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/pictures/kamchatka-photo-back_desktop.webp 1x,
+                    img/pictures/kamchatka-photo-back_desktop@2x.webp 2x" width="308" height="407">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pictures/kamchatka-photo-back_tablet.webp 1x,
+                    img/pictures/kamchatka-photo-back_tablet@2x.webp 2x" width="266" height="351">
+
+                    <source media="(min-width: 1200px)" srcset="img/pictures/kamchatka-photo-back_desktop.jpg 1x,
+                    img/pictures/kamchatka-photo-back_desktop@2x.jpg 2x" width="308" height="407">
+                    <img src="img/pictures/kamchatka-photo-back_tablet.jpg"
+                      srcset="img/pictures/kamchatka-photo-back_tablet@2x.jpg 2x" alt="Вид на горное озеро." width="320"
+                      height="167">
+                  </picture>
+                </div>
+                <div class="hero-photos__hero-photo hero-photos__hero-photo--front">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/pictures/kamchatka-photo-front_desktop.webp 1x,
+                    img/pictures/kamchatka-photo-front_desktop@2x.webp 2x" width="277" height="366">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/pictures/kamchatka-photo-front_tablet.webp 1x,
+                    img/pictures/kamchatka-photo-front_tablet@2x.webp 2x" width="236" height="312">
+
+                    <source media="(min-width: 1200px)" srcset="img/pictures/kamchatka-photo-front_desktop.jpg 1x,
+                    img/pictures/kamchatka-photo-front_desktop@2x.jpg 2x" width="277" height="366">
+                    <img src="img/pictures/kamchatka-photo-front_tablet.jpg"
+                      srcset="img/pictures/kamchatka-photo-front_tablet@2x.jpg 2x" alt="Поднимающаяся в гору девушка."
+                      width="320" height="167">
+                  </picture>
+                </div>
+              </div>
+              <div class="intro__footer intro-footer">
+                <div class="intro-footer__difficulty difficulty">
+                  <div class="difficulty__item">
+                    <svg width="12" height="12">
+                      <use href="img/sprite.svg#moon"></use>
+                    </svg>
+                    <span>9 дней/10 ночей</span>
+                  </div>
+                  <div class="difficulty__item">
+                    <svg width="12" height="12">
+                      <use href="img/sprite.svg#level"></use>
+                    </svg>
+                    <span>Средняя сложность</span>
+                  </div>
+                </div>
+                <div class="intro-footer__pagination pagination-swiper">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__intro-container hero__intro-container--altay swiper-slide">
+            <div class="hero__intro intro">
+              <div class="intro__title">
+                <h2>Магические пейзажи Алтайского Края</h2>
+              </div>
+              <div class="intro__text">
+                <span>
+                  Алтайский трекинг-тур&nbsp; – это&nbsp;захватывающее приключение с&nbsp;посещением магических
+                  и&nbsp;захватывающих дух ландшафтов Алтайских гор.
+                </span>
+              </div>
+              <div class="intro__button-container">
+                <a class="intro__button" href="#">Смотреть тур</a>
+              </div>
+              <div class="intro__media audio-player"><iframe frameborder="0" style="border:none;width:100%;height:100%;"
+                  width="100%" height="100%" src="https://music.yandex.ru/iframe/#track/112912322/25474374">Слушайте <a
+                    href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
+                    фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
+              </div>
+              <div class="intro__footer intro-footer">
+                <div class="intro-footer__difficulty difficulty">
+                  <div class="difficulty__item">
+                    <svg width="12" height="12">
+                      <use href="img/sprite.svg#moon"></use>
+                    </svg>
+                    <span>8 дней/7 ночей</span>
+                  </div>
+                  <div class="difficulty__item">
+                    <svg width="12" height="12">
+                      <use href="img/sprite.svg#level"></use>
+                    </svg>
+                    <span>Легкая сложность</span>
+                  </div>
+                </div>
+                <div class="intro-footer__pagination pagination-swiper">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <a class="footer__logo-link" href="index.html">
             <svg width="205" height="62">
               <use href="img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <div class="header__phone-container">
-            <a class="header__phone" href="tel:88007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
-          </div>
         </div>
-        <div class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item">Туры</li>
-            <li class="menu__item">Обучение</li>
-            <li class="menu__item">О&nbsp;нас</li>
-            <li class="menu__item">Отзывы</li>
-            <li class="menu__item">Фотографии</li>
-            <li class="menu__item">Контакты</li>
+        <div class="footer__navigation footer-nav">
+          <ul class="footer-nav__list">
+            <li>
+              <a class="footer-nav__link" href="#">Туры</a>
+            </li>
+            <li>
+              <a class="footer-nav__link" href="#">Обучение</a>
+            </li>
+            <li>
+              <a class="footer-nav__link" href="#">О&nbsp;нас</a>
+            </li>
+            <li>
+              <a class="footer-nav__link" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="footer-nav__link" href="#">Фотографии</a>
+            </li>
+            <li>
+              <a class="footer-nav__link" href="#">Контакты</a>
+            </li>
           </ul>
         </div>
-        <div class="header__menu-bcgr"></div>
-      </header>
-    </div>
-
-    <div class="hero__intro-swiper swiper">
-      <div class="hero__intro-wrapper swiper-wrapper">
-
-        <div class="hero__intro-container hero__intro-container--kavkaz swiper-slide">
-          <div class="hero__intro intro">
-            <div class="intro__title">
-              <h2>Захватывающие вершины Кавказа</h2>
-            </div>
-            <div class="intro__text">
-              <span>
-                В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход
-                на&nbsp;вершину горы Чегет.
-              </span>
-            </div>
-            <div class="intro__button-container">
-              <a class="intro__button" href="#">Смотреть тур</a>
-            </div>
-            <div class="intro__media video-player" data-id="video"
-              data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-preview_desktop.webp 1x,
-                img/video-preview_desktop@2x.webp 2x" width="482" height="317">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-preview_tablet.webp 1x,
-                img/video-preview_tablet@2x.webp 2x" width="442" height="300">
-                <source type="image/webp" media="(min-width: 320px)" srcset="#,
-                # 2x" width="320" height="167">
-
-                <source media="(min-width: 1200px)" srcset="img/video-preview_desktop.jpg 1x,
-                img/video-preview_desktop@2x.jpg 2x" width="482" height="317">
-                <source media="(min-width: 768px)" srcset="img/video-preview_tablet.jpg 1x,
-                img/video-preview_tablet@2x.jpg 2x" width="442" height="300">
-                <img src="#" srcset="# 2x" alt="Спортзал." width="320" height="167">
-              </picture>
-              <div class="intro__video-play-button" tabindex="0">
-                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="28" cy="28" r="27.5" fill="currentColor" fill-opacity="0.2" stroke="white" />
-                  <path d="M37 28L25 17V39L37 28Z" fill="white" stroke="white" stroke-opacity="0" />
-                </svg>
-              </div>
-            </div>
-            <div class="intro__footer intro-footer">
-              <div class="intro-footer__difficulty difficulty">
-                <div class="difficulty__item">
-                  <svg width="12" height="12">
-                    <use href="img/sprite.svg#moon"></use>
-                  </svg>
-                  <span>6 дней/5 ночей</span>
-                </div>
-                <div class="difficulty__item">
-                  <svg width="12" height="12">
-                    <use href="img/sprite.svg#level"></use>
-                  </svg>
-                  <span>Высокая сложность</span>
-                </div>
-              </div>
-              <div class="intro-footer__pagination pagination-swiper">
-              </div>
-            </div>
-          </div>
+        <div class="footer__phone">
+          <a class="footer__phone-link" href="tel:88007253232">8&nbsp;800&nbsp;725&nbsp;32&nbsp;32</a>
         </div>
-
-        <div class="hero__intro-container hero__intro-container--kamchatka swiper-slide">
-          <div class="hero__intro intro">
-            <div class="intro__title">
-              <h2>Невероятная природа Камчатки</h2>
-            </div>
-            <div class="intro__text">
-              <span>
-                Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному
-                из&nbsp;самых нетронутых уголков дикой <br>природы в&nbsp;мире.
-              </span>
-            </div>
-            <div class="intro__button-container">
-              <a class="intro__button" href="#">Смотреть тур</a>
-            </div>
-            <div class="intro__media hero-photos">
-              <div class="hero-photos__hero-photo hero-photos__hero-photo--back">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/kamchatka-photo-back_desktop.webp 1x,
-                img/kamchatka-photo-back_desktop@2x.webp 2x" width="308" height="407">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/kamchatka-photo-back_tablet.webp 1x,
-                img/kamchatka-photo-back_tablet@2x.webp 2x" width="266" height="351">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="# 1x,
-                # 2x" width="320" height="167">
-
-                  <source media="(min-width: 1200px)" srcset="img/kamchatka-photo-back_desktop.jpg 1x,
-                img/kamchatka-photo-back_desktop@2x.jpg 2x" width="308" height="407">
-                  <source media="(min-width: 768px)" srcset="img/kamchatka-photo-back_tablet.jpg 1x,
-                img/kamchatka-photo-back_tablet@2x.jpg 2x" width="266" height="351">
-                  <img src="#" srcset="# 2x" alt="Вид на горное озеро." width="320" height="167">
-                </picture>
-              </div>
-              <div class="hero-photos__hero-photo hero-photos__hero-photo--front">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/kamchatka-photo-front_desktop.webp 1x,
-                img/kamchatka-photo-front_desktop@2x.webp 2x" width="277" height="366">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/kamchatka-photo-front_tablet.webp 1x,
-                img/kamchatka-photo-front_tablet@2x.webp 2x" width="236" height="312">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="# 1x,
-                # 2x" width="320" height="167">
-
-                  <source media="(min-width: 1200px)" srcset="img/kamchatka-photo-front_desktop.jpg 1x,
-                img/kamchatka-photo-front_desktop@2x.jpg 2x" width="277" height="366">
-                  <source media="(min-width: 768px)" srcset="img/kamchatka-photo-front_tablet.jpg 1x,
-                img/kamchatka-photo-front_tablet@2x.jpg 2x" width="236" height="312">
-                  <img src="#" srcset="# 2x" alt="Поднимающаяся в гору девушка." width="320" height="167">
-                </picture>
-              </div>
-            </div>
-            <div class="intro__footer intro-footer">
-              <div class="intro-footer__difficulty difficulty">
-                <div class="difficulty__item">
-                  <svg width="12" height="12">
-                    <use href="img/sprite.svg#moon"></use>
-                  </svg>
-                  <span>9 дней/10 ночей</span>
-                </div>
-                <div class="difficulty__item">
-                  <svg width="12" height="12">
-                    <use href="img/sprite.svg#level"></use>
-                  </svg>
-                  <span>Средняя сложность</span>
-                </div>
-              </div>
-              <div class="intro-footer__pagination pagination-swiper">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero__intro-container hero__intro-container--altay swiper-slide">
-          <div class="hero__intro intro">
-            <div class="intro__title">
-              <h2>Магические пейзажи Алтайского Края</h2>
-            </div>
-            <div class="intro__text">
-              <span>
-                Алтайский трекинг-тур&nbsp; – это&nbsp;захватывающее приключение с&nbsp;посещением магических
-                и&nbsp;захватывающих дух ландшафтов Алтайских гор.
-              </span>
-            </div>
-            <div class="intro__button-container">
-              <a class="intro__button" href="#">Смотреть тур</a>
-            </div>
-            <div class="intro__media audio-player"><iframe frameborder="0" style="border:none;width:100%;height:100%;"
-                width="100%" height="100%" src="https://music.yandex.ru/iframe/#track/112912322/25474374">Слушайте <a
-                  href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
-                  фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
-            </div>
-            <div class="intro__footer intro-footer">
-              <div class="intro-footer__difficulty difficulty">
-                <div class="difficulty__item">
-                  <svg width="12" height="12">
-                    <use href="img/sprite.svg#moon"></use>
-                  </svg>
-                  <span>8 дней/7 ночей</span>
-                </div>
-                <div class="difficulty__item">
-                  <svg width="12" height="12">
-                    <use href="img/sprite.svg#level"></use>
-                  </svg>
-                  <span>Легкая сложность</span>
-                </div>
-              </div>
-              <div class="intro-footer__pagination pagination-swiper">
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+      <div class="footer__bottom">
+        <ul class="footer__social">
+          <li>
+            <a class="footer__social-link" href="index.html">
+              <svg width="16" height="9">
+                <use href="img/sprite.svg#vk"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="index.html">
+              <svg width="9" height="16">
+                <use href="img/sprite.svg#ok"></use>
+              </svg></a>
+          </li>
+          <li>
+            <a class="footer__social-link" href="index.html">
+              <svg width="14" height="15">
+                <use href="img/sprite.svg#reddit"></use>
+              </svg></a>
+          </li>
+        </ul>
+        <p>Политика конфиденциальности</p>
+      </div>
 
+    </footer>
+  </div>
 </body>
 
 <script src="js/vendor.min.js"></script>

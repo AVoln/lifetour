@@ -1,0 +1,117 @@
+.footer {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-top: 1px solid $color-elephant-op03;
+
+    @include vp-1200 {
+      padding-top: 20px;
+      max-width: 1440px;
+      padding: 0 120px;
+    }
+
+    @include vp-1199 {
+      max-width: 768px;
+      padding: 44px 45px 0;
+    }
+
+    @include vp-767 {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px 20px 0;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+
+    @include vp-1200 {
+      padding-top: 16px;
+    }
+
+    @include vp-1199 {
+      padding-top: 37px;
+    }
+  }
+
+  &__bottom p {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 300;
+  }
+
+  &__logo {
+    @include vp-1200 {
+      padding-right: 17px;
+    }
+
+    @include vp-1199 {
+      padding-right: 20px;
+    }
+  }
+
+  &__logo svg {
+    @include vp-1199 {
+      width: 118px;
+      height: 34px;
+    }
+
+    @include vp-767 {
+      width: 112px;
+      height: 34px;
+    }
+  }
+
+  &__phone {
+    font-size: 18px;
+    font-weight: 600;
+
+    @include vp-1200 {
+      padding-left: 17px;
+    }
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    @include vp-1200 {
+      gap: 20px;
+    }
+
+    @include vp-1199 {
+      gap: 20px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-elephant-op03;
+    color: $color-elephant;
+
+    @include hover-focus {
+      border: 1px solid $color-elephant;
+    }
+
+    @include active {
+      border: 1px solid $color-navy-blue;
+      background-color: $color-navy-blue;
+      color: $color-default-white;
+    }
+  }
+}
