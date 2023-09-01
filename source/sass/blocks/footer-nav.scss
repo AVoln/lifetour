@@ -25,9 +25,30 @@
   }
 
   &__link {
+    border: 1px solid $color-transparent;
+
+    @include vp-1200 {
+      padding: 2px 5px;
+    }
+
     @include vp-1199 {
       font-size: 14px;
       line-height: 14px;
+      padding: 2px 5px;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $color-elephant;
+    }
+
+    &:active {
+      outline: none;
+      border: 1px solid $color-transparent;
+    }
+
+    &:focus-visible {
+      outline: none;
+      border: 1px solid $color-elephant;
     }
   }
 }

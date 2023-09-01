@@ -7,9 +7,8 @@
     border-top: 1px solid $color-elephant-op03;
 
     @include vp-1200 {
-      padding-top: 20px;
       max-width: 1440px;
-      padding: 0 120px;
+      padding: 20px 120px 0;
     }
 
     @include vp-1199 {
@@ -31,14 +30,21 @@
 
     @include vp-1200 {
       padding-top: 16px;
+      padding-bottom: 30px;
     }
 
     @include vp-1199 {
       padding-top: 37px;
+      padding-bottom: 20px;
+    }
+
+    @include vp-767 {
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
 
-  &__bottom p {
+  &__privacy {
     font-size: 12px;
     line-height: 12px;
     font-weight: 300;
@@ -66,6 +72,24 @@
     }
   }
 
+  &__logo-link {
+    &:hover svg {
+      color: $color-resolution-blue;
+    }
+
+    &:active svg {
+      color: $color-navy-blue;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible svg {
+      color: $color-resolution-blue;
+    }
+  }
+
   &__phone {
     font-size: 18px;
     font-weight: 600;
@@ -76,6 +100,21 @@
 
     @include vp-1199 {
       display: none;
+    }
+  }
+
+  &__phone-link {
+    &:hover {
+      color: $color-resolution-blue;
+    }
+
+    &:active {
+      color: $color-navy-blue;
+    }
+
+    &:focus-visible {
+      color: $color-resolution-blue;
+      outline: none;
     }
   }
 
@@ -103,15 +142,25 @@
     height: 30px;
     border: 1px solid $color-elephant-op03;
     color: $color-elephant;
+    transition: background-color 0.3s ease;
 
-    @include hover-focus {
+    &:hover {
       border: 1px solid $color-elephant;
     }
 
-    @include active {
+    &:active {
       border: 1px solid $color-navy-blue;
       background-color: $color-navy-blue;
       color: $color-default-white;
+    }
+
+    &:focus-visible {
+      border: 1px solid $color-elephant;
+      outline: none;
+    }
+
+    &:disabled {
+      opacity: 0.3;
     }
   }
 }
