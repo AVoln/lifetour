@@ -1,0 +1,6 @@
+.tours {
+  @include vp-1200 {
+    width: 100%;
+    padding: 0 calc(50% - 600px);
+  }
+}

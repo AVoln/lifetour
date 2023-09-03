@@ -1,0 +1,12 @@
+.tours-card {
+  color: $color-default-white;
+
+  &__photo {
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__location {
+    color: $color-default-white;
+  }
+}

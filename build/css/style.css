@@ -3097,6 +3097,24 @@ button,
   border: 1px solid #2d383f;
 }
 
+@media (min-width: 1200px) {
+  .tours {
+    width: 100%;
+    padding: 0 calc(50% - 600px);
+  }
+}
+
+.tours-card {
+  color: #ffffff;
+}
+.tours-card__photo {
+  position: absolute;
+  z-index: -1;
+}
+.tours-card__location {
+  color: #ffffff;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
