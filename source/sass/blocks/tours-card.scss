@@ -1,10 +1,11 @@
 .tours-card {
   color: $color-default-white;
   height: auto;
+  min-height: 412px;
 
-  @include vp-1200 {
-    min-height: 412px;
-  }
+  @include vp-1200 {}
+
+  @include vp-1199 {}
 
   &__photo {
     position: absolute;
@@ -26,10 +27,9 @@
     justify-content: end;
     width: 100%;
     height: 100%;
+    padding: 28px 20px;
 
-    @include vp-1200 {
-      padding: 28px 20px;
-    }
+    @include vp-1200 {}
   }
 
   &__top {
@@ -38,10 +38,14 @@
     justify-content: space-between;
     font-size: 12px;
     line-height: 12px;
-    font-weight: 500px;
+    font-weight: 500;
+    padding-bottom: 23px;
 
-    @include vp-1200 {
-      padding-bottom: 23px;
+    @include vp-767 {
+      flex-wrap: wrap;
+      column-gap: 16px;
+      row-gap: 15px;
+      justify-content: flex-start;
     }
   }
 
@@ -54,6 +58,10 @@
     padding: 8px 0 9px;
     background-color: $color-navy-blue;
     gap: 6px;
+
+    @include vp-767 {
+      order: 1;
+    }
   }
 
   &__time {
@@ -74,6 +82,7 @@
 
     @include vp-767 {
       font-size: 20px;
+      width: 80%;
     }
   }
 
@@ -83,9 +92,10 @@
     font-size: 12px;
     font-weight: 300;
     line-height: 12px;
+    padding-top: 38px;
 
-    @include vp-1200 {
-      padding-top: 38px;
+    @include vp-767 {
+      padding-top: 31px;
     }
   }
 
@@ -97,6 +107,29 @@
 
     @include vp-767 {
       font-size: 12px;
+    }
+  }
+
+  &__difficulty {
+    position: relative;
+  }
+
+  &__difficulty::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color: $color-default-white;
+    opacity: 0.2;
+    top: -20px;
+    left: 0;
+  }
+
+  &__difficulty svg {
+    @include vp-767 {
+      width: 12px;
+      height: 12px;
     }
   }
 }

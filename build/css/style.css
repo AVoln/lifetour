@@ -2876,6 +2876,9 @@ button,
   }
 }
 
+.footer {
+  border-top: 1px solid rgba(45, 56, 63, 0.3);
+}
 .footer__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2887,7 +2890,6 @@ button,
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  border-top: 1px solid rgba(45, 56, 63, 0.3);
 }
 @media (min-width: 1200px) {
   .footer__top {
@@ -3116,15 +3118,39 @@ button,
   border: 1px solid #2d383f;
 }
 
+.tours {
+  position: relative;
+}
 @media (min-width: 1200px) {
   .tours {
     width: 100%;
     padding: 119px calc(50% - 600px) 102px;
   }
 }
+@media (max-width: 1199px) {
+  .tours {
+    width: 100%;
+    padding: 85px calc(50% - 332px) 70px;
+  }
+}
+@media (max-width: 767px) {
+  .tours {
+    padding: 0 calc(50% - 145px) 60px;
+  }
+}
 @media (min-width: 1200px) {
   .tours__cards {
     padding-top: 58px;
+  }
+}
+@media (max-width: 1199px) {
+  .tours__cards {
+    padding-top: 46px;
+  }
+}
+@media (max-width: 767px) {
+  .tours__cards {
+    padding-top: 28px;
   }
 }
 .tours__show-tours {
@@ -3147,21 +3173,64 @@ button,
     padding-top: 52px;
   }
 }
+@media (max-width: 1199px) {
+  .tours__show-tours {
+    padding-top: 50px;
+  }
+}
 @media (max-width: 767px) {
   .tours__show-tours {
+    padding-top: 29px;
     font-size: 14px;
     line-height: 14px;
   }
+}
+.tours__cloud-bcgr {
+  position: absolute;
+  z-index: -2;
+}
+@media (min-width: 1200px) {
+  .tours__cloud-bcgr {
+    left: -170px;
+    top: 360px;
+  }
+}
+@media (max-width: 1199px) {
+  .tours__cloud-bcgr {
+    display: none;
+  }
+}
+.tours__mounts-bcgr {
+  position: absolute;
+  z-index: -2;
+}
+@media (min-width: 1200px) {
+  .tours__mounts-bcgr {
+    right: 0;
+    top: -20px;
+  }
+}
+@media (max-width: 1199px) {
+  .tours__mounts-bcgr {
+    right: 0;
+    top: -110px;
+  }
+}
+@media (max-width: 767px) {
+  .tours__mounts-bcgr {
+    right: 0;
+    top: 70px;
+  }
+}
+.tours__mounts-bcgr img {
+  width: 100%;
+  vertical-align: middle;
 }
 
 .tours-card {
   color: #ffffff;
   height: auto;
-}
-@media (min-width: 1200px) {
-  .tours-card {
-    min-height: 412px;
-  }
+  min-height: 412px;
 }
 .tours-card__photo {
   position: absolute;
@@ -3188,11 +3257,7 @@ button,
           justify-content: end;
   width: 100%;
   height: 100%;
-}
-@media (min-width: 1200px) {
-  .tours-card__inner {
-    padding: 28px 20px;
-  }
+  padding: 28px 20px;
 }
 .tours-card__top {
   display: -webkit-box;
@@ -3206,11 +3271,20 @@ button,
           justify-content: space-between;
   font-size: 12px;
   line-height: 12px;
-  font-weight: 500px;
+  font-weight: 500;
+  padding-bottom: 23px;
 }
-@media (min-width: 1200px) {
+@media (max-width: 767px) {
   .tours-card__top {
-    padding-bottom: 23px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 16px;
+       -moz-column-gap: 16px;
+            column-gap: 16px;
+    row-gap: 15px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 .tours-card__location {
@@ -3228,6 +3302,13 @@ button,
   padding: 8px 0 9px;
   background-color: #0266c1;
   gap: 6px;
+}
+@media (max-width: 767px) {
+  .tours-card__location {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 .tours-card__time {
   display: -webkit-box;
@@ -3254,6 +3335,7 @@ button,
 @media (max-width: 767px) {
   .tours-card h3 {
     font-size: 20px;
+    width: 80%;
   }
 }
 .tours-card__bottom {
@@ -3266,10 +3348,11 @@ button,
   font-size: 12px;
   font-weight: 300;
   line-height: 12px;
+  padding-top: 38px;
 }
-@media (min-width: 1200px) {
+@media (max-width: 767px) {
   .tours-card__bottom {
-    padding-top: 38px;
+    padding-top: 31px;
   }
 }
 .tours-card__bottom p {
@@ -3281,6 +3364,26 @@ button,
 @media (max-width: 767px) {
   .tours-card__bottom p {
     font-size: 12px;
+  }
+}
+.tours-card__difficulty {
+  position: relative;
+}
+.tours-card__difficulty::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 80px;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.2;
+  top: -20px;
+  left: 0;
+}
+@media (max-width: 767px) {
+  .tours-card__difficulty svg {
+    width: 12px;
+    height: 12px;
   }
 }
 
