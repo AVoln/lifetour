@@ -1,0 +1,52 @@
+h2 {
+  position: relative;
+  font-weight: 800;
+  display: block;
+  padding-right: 80px;
+  position: relative;
+  padding-top: 10px;
+
+  @include vp-1200 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+    padding-top: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: attr(data-title);
+    left: 0;
+    bottom: 0;
+    color: $color-elephant;
+    opacity: 0.03;
+    font-weight: 800;
+    z-index: -3;
+
+    @include vp-1200 {
+      font-size: 55px;
+      line-height: 48px;
+    }
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 33px;
+    }
+
+    @include vp-767 {
+      top: 0;
+      font-size: 26px;
+      line-height: 20px;
+
+    }
+  }
+}
