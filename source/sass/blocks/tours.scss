@@ -1,0 +1,94 @@
+.tours {
+  position: relative;
+
+  @include vp-1200 {
+    width: 100%;
+    padding: 119px calc(50% - 600px) 102px;
+  }
+
+  @include vp-1199 {
+    width: 100%;
+    padding: 85px calc(50% - 332px) 70px;
+  }
+
+  @include vp-767 {
+    padding: 0 calc(50% - 145px) 60px;
+  }
+
+  &__cards {
+    @include vp-1200 {
+      padding-top: 58px;
+    }
+
+    @include vp-1199 {
+      padding-top: 46px;
+    }
+
+    @include vp-767 {
+      padding-top: 28px;
+    }
+  }
+
+  &__show-tours {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    gap: 12px;
+
+    @include vp-1200 {
+      padding-top: 52px;
+    }
+
+    @include vp-1199 {
+      padding-top: 50px;
+    }
+
+    @include vp-767 {
+      padding-top: 29px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  &__cloud-bcgr {
+    position: absolute;
+    z-index: -2;
+
+    @include vp-1200 {
+      left: -170px;
+      top: 360px;
+    }
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  &__mounts-bcgr {
+    position: absolute;
+    z-index: -2;
+
+    @include vp-1200 {
+      right: 0;
+      top: -20px;
+    }
+
+    @include vp-1199 {
+      right: 0;
+      top: -110px;
+    }
+
+    @include vp-767 {
+      right: 0;
+      top: 70px;
+    }
+  }
+
+  &__mounts-bcgr img {
+    width: 100%;
+    vertical-align: middle;
+  }
+}
