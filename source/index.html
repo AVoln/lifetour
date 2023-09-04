@@ -234,42 +234,44 @@
       <section class="tours" id="tours">
         <div class="tours__container-swiper swiper">
           <h2>Ближайшие туры</h2>
-          <button class="tours__button tours__button--prev slider-button">
-            <svg width="14" height="7">
-              <use href="img/sprite.svg#arrow"></use>
-            </svg>
-          </button>
-          <button class="tours__button tours__button--next slider-button">
-            <svg width="14" height="7">
-              <use href="img/sprite.svg#arrow"></use>
-            </svg>
-          </button>
+          <div class="tours__buttons swiper-buttons">
+            <button class="tours__button tours__button--prev button">
+              <svg width="14" height="7">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <button class="tours__button tours__button--next button button--next">
+              <svg width="14" height="7">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
           <div class="tours__cards swiper-wrapper">
 
             <div class="tours__card tours-card swiper-slide">
-              <div class="tours-card__wrapper">
-                <div class="tours-card__photo">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/pictures/elbrus-tour_desktop.webp 1x, img/pictures/elbrus-tour_desktop@2x.webp 2x"
-                      width="380" height="412">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/pictures/elbrus-tour_tablet.webp 1x, img/pictures/elbrus-tour_tablet@2x.webp 2x"
-                      width="324" height="412">
-                    <source type="image/webp"
-                      srcset="img/pictures/elbrus-tour_mobile.webp 1x, img/pictures/elbrus-tour_mobile@2x.webp 2x"
-                      width="290" height="412">
+              <div class="tours-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/pictures/elbrus-tour_desktop.webp 1x, img/pictures/elbrus-tour_desktop@2x.webp 2x"
+                    width="380" height="412">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/pictures/elbrus-tour_tablet.webp 1x, img/pictures/elbrus-tour_tablet@2x.webp 2x"
+                    width="324" height="412">
+                  <source type="image/webp"
+                    srcset="img/pictures/elbrus-tour_mobile.webp 1x, img/pictures/elbrus-tour_mobile@2x.webp 2x"
+                    width="290" height="412">
 
-                    <source media="(min-width: 1200px)"
-                      srcset="img/pictures/elbrus-tour_desktop.jpg 1x, img/pictures/elbrus-tour_desktop@2x.jpg 2x"
-                      width="380" height="412">
-                    <source media="(min-width: 768px)"
-                      srcset="img/pictures/elbrus-tour_tablet.jpg 1x, img/pictures/elbrus-tour_tablet@2x.jpg 2x"
-                      width="324" height="412">
-                    <img src="img/pictures/elbrus-tour_mobile.jpg" srcset="img/pictures/elbrus-tour_mobile@2x.jpg 2x"
-                      alt="Горный пейзаж." width="290" height="412">
-                  </picture>
-                </div>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/pictures/elbrus-tour_desktop.jpg 1x, img/pictures/elbrus-tour_desktop@2x.jpg 2x"
+                    width="380" height="412">
+                  <source media="(min-width: 768px)"
+                    srcset="img/pictures/elbrus-tour_tablet.jpg 1x, img/pictures/elbrus-tour_tablet@2x.jpg 2x"
+                    width="324" height="412">
+                  <img src="img/pictures/elbrus-tour_mobile.jpg" srcset="img/pictures/elbrus-tour_mobile@2x.jpg 2x"
+                    alt="Горный пейзаж." width="290" height="412">
+                </picture>
+              </div>
+              <div class="tours-card__inner">
                 <div class="tours-card__top">
                   <a class="tours-card__location" href="#">
                     <svg width="9" height="12">
@@ -293,7 +295,7 @@
                 <h3>Путешествие вокруг Эльбруса</h3>
                 <div class="tours-card__bottom">
                   <div class="tours-card__difficulty">
-                    <span>Сложность</span>
+                    <span>Сложность:</span>
                     <p>
                       <svg width="15" height="14" fill="#ffffff">
                         <use href="img/sprite.svg#star"></use>
@@ -325,29 +327,29 @@
             </div>
 
             <div class="tours__card tours-card swiper-slide">
-              <div class="tours-card__wrapper">
-                <div class="tours-card__photo">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/pictures/beluha-tour_desktop.webp 1x, img/pictures/beluha-tour_desktop@2x.webp 2x"
-                      width="380" height="412">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/pictures/beluha-tour_tablet.webp 1x, img/pictures/beluha-tour_tablet@2x.webp 2x"
-                      width="324" height="412">
-                    <source type="image/webp"
-                      srcset="img/pictures/beluha-tour_mobile.webp 1x, img/pictures/beluha-tour_mobile@2x.webp 2x"
-                      width="290" height="412">
+              <div class="tours-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/pictures/beluha-tour_desktop.webp 1x, img/pictures/beluha-tour_desktop@2x.webp 2x"
+                    width="380" height="412">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/pictures/beluha-tour_tablet.webp 1x, img/pictures/beluha-tour_tablet@2x.webp 2x"
+                    width="324" height="412">
+                  <source type="image/webp"
+                    srcset="img/pictures/beluha-tour_mobile.webp 1x, img/pictures/beluha-tour_mobile@2x.webp 2x"
+                    width="290" height="412">
 
-                    <source media="(min-width: 1200px)"
-                      srcset="img/pictures/beluha-tour_desktop.jpg 1x, img/pictures/beluha-tour_desktop@2x.jpg 2x"
-                      width="380" height="412">
-                    <source media="(min-width: 768px)"
-                      srcset="img/pictures/beluha-tour_tablet.jpg 1x, img/pictures/beluha-tour_tablet@2x.jpg 2x"
-                      width="324" height="412">
-                    <img src="img/pictures/beluha-tour_mobile.jpg" srcset="img/pictures/beluha-tour_mobile@2x.jpg 2x"
-                      alt="Горный пейзаж." width="290" height="412">
-                  </picture>
-                </div>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/pictures/beluha-tour_desktop.jpg 1x, img/pictures/beluha-tour_desktop@2x.jpg 2x"
+                    width="380" height="412">
+                  <source media="(min-width: 768px)"
+                    srcset="img/pictures/beluha-tour_tablet.jpg 1x, img/pictures/beluha-tour_tablet@2x.jpg 2x"
+                    width="324" height="412">
+                  <img src="img/pictures/beluha-tour_mobile.jpg" srcset="img/pictures/beluha-tour_mobile@2x.jpg 2x"
+                    alt="Горный пейзаж." width="290" height="412">
+                </picture>
+              </div>
+              <div class="tours-card__inner">
                 <div class="tours-card__top">
                   <a class="tours-card__location" href="#">
                     <svg width="9" height="12">
@@ -371,7 +373,7 @@
                 <h3>Путь к&nbsp;подножию Белухи</h3>
                 <div class="tours-card__bottom">
                   <div class="tours-card__difficulty">
-                    <span>Сложность</span>
+                    <span>Сложность:</span>
                     <p>
                       <svg width="15" height="14" fill="#ffffff">
                         <use href="img/sprite.svg#star"></use>
@@ -403,29 +405,29 @@
             </div>
 
             <div class="tours__card tours-card swiper-slide">
-              <div class="tours-card__wrapper">
-                <div class="tours-card__photo">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/pictures/fisht-tour_desktop.webp 1x, img/pictures/fisht-tour_desktop@2x.webp 2x"
-                      width="380" height="412">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/pictures/fisht-tour_tablet.webp 1x, img/pictures/fisht-tour_tablet@2x.webp 2x"
-                      width="324" height="412">
-                    <source type="image/webp"
-                      srcset="img/pictures/fisht-tour_mobile.webp 1x, img/pictures/fisht-tour_mobile@2x.webp 2x"
-                      width="290" height="412">
+              <div class="tours-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/pictures/fisht-tour_desktop.webp 1x, img/pictures/fisht-tour_desktop@2x.webp 2x"
+                    width="380" height="412">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/pictures/fisht-tour_tablet.webp 1x, img/pictures/fisht-tour_tablet@2x.webp 2x"
+                    width="324" height="412">
+                  <source type="image/webp"
+                    srcset="img/pictures/fisht-tour_mobile.webp 1x, img/pictures/fisht-tour_mobile@2x.webp 2x"
+                    width="290" height="412">
 
-                    <source media="(min-width: 1200px)"
-                      srcset="img/pictures/fisht-tour_desktop.jpg 1x, img/pictures/fisht-tour_desktop@2x.jpg 2x"
-                      width="380" height="412">
-                    <source media="(min-width: 768px)"
-                      srcset="img/pictures/fisht-tour_tablet.jpg 1x, img/pictures/fisht-tour_tablet@2x.jpg 2x"
-                      width="324" height="412">
-                    <img src="img/pictures/fisht-tour_mobile.jpg" srcset="img/pictures/fisht-tour_mobile@2x.jpg 2x"
-                      alt="Горный пейзаж." width="290" height="412">
-                  </picture>
-                </div>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/pictures/fisht-tour_desktop.jpg 1x, img/pictures/fisht-tour_desktop@2x.jpg 2x"
+                    width="380" height="412">
+                  <source media="(min-width: 768px)"
+                    srcset="img/pictures/fisht-tour_tablet.jpg 1x, img/pictures/fisht-tour_tablet@2x.jpg 2x" width="324"
+                    height="412">
+                  <img src="img/pictures/fisht-tour_mobile.jpg" srcset="img/pictures/fisht-tour_mobile@2x.jpg 2x"
+                    alt="Горный пейзаж." width="290" height="412">
+                </picture>
+              </div>
+              <div class="tours-card__inner">
                 <div class="tours-card__top">
                   <a class="tours-card__location" href="#">
                     <svg width="9" height="12">
@@ -449,7 +451,7 @@
                 <h3>Через Фишт к&nbsp;Черному морю</h3>
                 <div class="tours-card__bottom">
                   <div class="tours-card__difficulty">
-                    <span>Сложность</span>
+                    <span>Сложность:</span>
                     <p>
                       <svg width="15" height="14" fill="#ffffff">
                         <use href="img/sprite.svg#star"></use>
@@ -481,29 +483,29 @@
             </div>
 
             <div class="tours__card tours-card swiper-slide">
-              <div class="tours-card__wrapper">
-                <div class="tours-card__photo">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/pictures/elbrus-tour_desktop.webp 1x, img/pictures/elbrus-tour_desktop@2x.webp 2x"
-                      width="380" height="412">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/pictures/elbrus-tour_tablet.webp 1x, img/pictures/elbrus-tour_tablet@2x.webp 2x"
-                      width="324" height="412">
-                    <source type="image/webp"
-                      srcset="img/pictures/elbrus-tour_mobile.webp 1x, img/pictures/elbrus-tour_mobile@2x.webp 2x"
-                      width="290" height="412">
+              <div class="tours-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/pictures/elbrus-tour_desktop.webp 1x, img/pictures/elbrus-tour_desktop@2x.webp 2x"
+                    width="380" height="412">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/pictures/elbrus-tour_tablet.webp 1x, img/pictures/elbrus-tour_tablet@2x.webp 2x"
+                    width="324" height="412">
+                  <source type="image/webp"
+                    srcset="img/pictures/elbrus-tour_mobile.webp 1x, img/pictures/elbrus-tour_mobile@2x.webp 2x"
+                    width="290" height="412">
 
-                    <source media="(min-width: 1200px)"
-                      srcset="img/pictures/elbrus-tour_desktop.jpg 1x, img/pictures/elbrus-tour_desktop@2x.jpg 2x"
-                      width="380" height="412">
-                    <source media="(min-width: 768px)"
-                      srcset="img/pictures/elbrus-tour_tablet.jpg 1x, img/pictures/elbrus-tour_tablet@2x.jpg 2x"
-                      width="324" height="412">
-                    <img src="img/pictures/elbrus-tour_mobile.jpg" srcset="img/pictures/elbrus-tour_mobile@2x.jpg 2x"
-                      alt="Горный пейзаж." width="290" height="412">
-                  </picture>
-                </div>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/pictures/elbrus-tour_desktop.jpg 1x, img/pictures/elbrus-tour_desktop@2x.jpg 2x"
+                    width="380" height="412">
+                  <source media="(min-width: 768px)"
+                    srcset="img/pictures/elbrus-tour_tablet.jpg 1x, img/pictures/elbrus-tour_tablet@2x.jpg 2x"
+                    width="324" height="412">
+                  <img src="img/pictures/elbrus-tour_mobile.jpg" srcset="img/pictures/elbrus-tour_mobile@2x.jpg 2x"
+                    alt="Горный пейзаж." width="290" height="412">
+                </picture>
+              </div>
+              <div class="tours-card__inner">
                 <div class="tours-card__top">
                   <a class="tours-card__location" href="#">
                     <svg width="9" height="12">
@@ -527,7 +529,7 @@
                 <h3>Путешествие вокруг Эльбруса</h3>
                 <div class="tours-card__bottom">
                   <div class="tours-card__difficulty">
-                    <span>Сложность</span>
+                    <span>Сложность:</span>
                     <p>
                       <svg width="15" height="14" fill="#ffffff">
                         <use href="img/sprite.svg#star"></use>
@@ -559,29 +561,29 @@
             </div>
 
             <div class="tours__card tours-card swiper-slide">
-              <div class="tours-card__wrapper">
-                <div class="tours-card__photo">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/pictures/beluha-tour_desktop.webp 1x, img/pictures/beluha-tour_desktop@2x.webp 2x"
-                      width="380" height="412">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/pictures/beluha-tour_tablet.webp 1x, img/pictures/beluha-tour_tablet@2x.webp 2x"
-                      width="324" height="412">
-                    <source type="image/webp"
-                      srcset="img/pictures/beluha-tour_mobile.webp 1x, img/pictures/beluha-tour_mobile@2x.webp 2x"
-                      width="290" height="412">
+              <div class="tours-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/pictures/beluha-tour_desktop.webp 1x, img/pictures/beluha-tour_desktop@2x.webp 2x"
+                    width="380" height="412">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/pictures/beluha-tour_tablet.webp 1x, img/pictures/beluha-tour_tablet@2x.webp 2x"
+                    width="324" height="412">
+                  <source type="image/webp"
+                    srcset="img/pictures/beluha-tour_mobile.webp 1x, img/pictures/beluha-tour_mobile@2x.webp 2x"
+                    width="290" height="412">
 
-                    <source media="(min-width: 1200px)"
-                      srcset="img/pictures/beluha-tour_desktop.jpg 1x, img/pictures/beluha-tour_desktop@2x.jpg 2x"
-                      width="380" height="412">
-                    <source media="(min-width: 768px)"
-                      srcset="img/pictures/beluha-tour_tablet.jpg 1x, img/pictures/beluha-tour_tablet@2x.jpg 2x"
-                      width="324" height="412">
-                    <img src="img/pictures/beluha-tour_mobile.jpg" srcset="img/pictures/beluha-tour_mobile@2x.jpg 2x"
-                      alt="Горный пейзаж." width="290" height="412">
-                  </picture>
-                </div>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/pictures/beluha-tour_desktop.jpg 1x, img/pictures/beluha-tour_desktop@2x.jpg 2x"
+                    width="380" height="412">
+                  <source media="(min-width: 768px)"
+                    srcset="img/pictures/beluha-tour_tablet.jpg 1x, img/pictures/beluha-tour_tablet@2x.jpg 2x"
+                    width="324" height="412">
+                  <img src="img/pictures/beluha-tour_mobile.jpg" srcset="img/pictures/beluha-tour_mobile@2x.jpg 2x"
+                    alt="Горный пейзаж." width="290" height="412">
+                </picture>
+              </div>
+              <div class="tours-card__inner">
                 <div class="tours-card__top">
                   <a class="tours-card__location" href="#">
                     <svg width="9" height="12">
@@ -605,7 +607,7 @@
                 <h3>Путь к&nbsp;подножию Белухи</h3>
                 <div class="tours-card__bottom">
                   <div class="tours-card__difficulty">
-                    <span>Сложность</span>
+                    <span>Сложность:</span>
                     <p>
                       <svg width="15" height="14" fill="#ffffff">
                         <use href="img/sprite.svg#star"></use>
@@ -637,29 +639,29 @@
             </div>
 
             <div class="tours__card tours-card swiper-slide">
-              <div class="tours-card__wrapper">
-                <div class="tours-card__photo">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)"
-                      srcset="img/pictures/fisht-tour_desktop.webp 1x, img/pictures/fisht-tour_desktop@2x.webp 2x"
-                      width="380" height="412">
-                    <source type="image/webp" media="(min-width: 768px)"
-                      srcset="img/pictures/fisht-tour_tablet.webp 1x, img/pictures/fisht-tour_tablet@2x.webp 2x"
-                      width="324" height="412">
-                    <source type="image/webp"
-                      srcset="img/pictures/fisht-tour_mobile.webp 1x, img/pictures/fisht-tour_mobile@2x.webp 2x"
-                      width="290" height="412">
+              <div class="tours-card__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)"
+                    srcset="img/pictures/fisht-tour_desktop.webp 1x, img/pictures/fisht-tour_desktop@2x.webp 2x"
+                    width="380" height="412">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/pictures/fisht-tour_tablet.webp 1x, img/pictures/fisht-tour_tablet@2x.webp 2x"
+                    width="324" height="412">
+                  <source type="image/webp"
+                    srcset="img/pictures/fisht-tour_mobile.webp 1x, img/pictures/fisht-tour_mobile@2x.webp 2x"
+                    width="290" height="412">
 
-                    <source media="(min-width: 1200px)"
-                      srcset="img/pictures/fisht-tour_desktop.jpg 1x, img/pictures/fisht-tour_desktop@2x.jpg 2x"
-                      width="380" height="412">
-                    <source media="(min-width: 768px)"
-                      srcset="img/pictures/fisht-tour_tablet.jpg 1x, img/pictures/fisht-tour_tablet@2x.jpg 2x"
-                      width="324" height="412">
-                    <img src="img/pictures/fisht-tour_mobile.jpg" srcset="img/pictures/fisht-tour_mobile@2x.jpg 2x"
-                      alt="Горный пейзаж." width="290" height="412">
-                  </picture>
-                </div>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/pictures/fisht-tour_desktop.jpg 1x, img/pictures/fisht-tour_desktop@2x.jpg 2x"
+                    width="380" height="412">
+                  <source media="(min-width: 768px)"
+                    srcset="img/pictures/fisht-tour_tablet.jpg 1x, img/pictures/fisht-tour_tablet@2x.jpg 2x" width="324"
+                    height="412">
+                  <img src="img/pictures/fisht-tour_mobile.jpg" srcset="img/pictures/fisht-tour_mobile@2x.jpg 2x"
+                    alt="Горный пейзаж." width="290" height="412">
+                </picture>
+              </div>
+              <div class="tours-card__inner">
                 <div class="tours-card__top">
                   <a class="tours-card__location" href="#">
                     <svg width="9" height="12">
@@ -683,7 +685,7 @@
                 <h3>Через Фишт к&nbsp;Черному морю</h3>
                 <div class="tours-card__bottom">
                   <div class="tours-card__difficulty">
-                    <span>Сложность</span>
+                    <span>Сложность:</span>
                     <p>
                       <svg width="15" height="14" fill="#ffffff">
                         <use href="img/sprite.svg#star"></use>
@@ -714,6 +716,12 @@
               </div>
             </div>
           </div>
+          <a class="tours__show-tours" href="#">
+            <span>Показать все туры</span>
+            <svg width="9" height="14">
+              <use href="img/sprite.svg#right"></use>
+            </svg>
+          </a>
         </div>
       </section>
     </main>
