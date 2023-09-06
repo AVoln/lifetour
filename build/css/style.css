@@ -1519,6 +1519,25 @@ h2::before {
   }
 }
 
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 1199px) {
+  h3 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  h3 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3809,6 +3828,115 @@ h2::before {
   .process__item p {
     font-size: 12px;
     line-height: 18px;
+  }
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .about {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .about {
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    display: block;
+    padding-bottom: 60px;
+  }
+}
+.about__cloud-bcgr {
+  position: absolute;
+  z-index: -2;
+}
+@media (min-width: 1200px) {
+  .about__cloud-bcgr {
+    top: -170px;
+    right: 0px;
+  }
+}
+@media (max-width: 1199px) {
+  .about__cloud-bcgr {
+    display: none;
+  }
+}
+.about__photo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (min-width: 1200px) {
+  .about__text {
+    margin-left: -60px;
+    padding-right: 120px;
+  }
+}
+@media (max-width: 1199px) {
+  .about__text {
+    margin-left: -60px;
+    padding-right: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .about__text {
+    margin-left: 0;
+    padding: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__text h3:nth-child(2) {
+    padding-top: 58px;
+  }
+}
+@media (max-width: 1199px) {
+  .about__text h3:nth-child(2) {
+    padding-top: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .about__text h3:nth-child(2) {
+    padding-top: 33px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__text h3:nth-child(4) {
+    padding-top: 26px;
+  }
+}
+@media (max-width: 1199px) {
+  .about__text h3:nth-child(4) {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .about__text h3:nth-child(4) {
+    padding-top: 41px;
+  }
+}
+.about__text p {
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (min-width: 1200px) {
+  .about__text p {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .about__text p {
+    padding-top: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .about__text p {
+    padding-top: 18px;
   }
 }
 
