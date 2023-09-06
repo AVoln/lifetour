@@ -14,7 +14,7 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-@import "global/h2";
+@import "global/titles.scss";
 
 // Blocks
 // ---------------------------------
@@ -43,6 +43,7 @@
 @import "blocks/trainer.scss";
 @import "blocks/training.scss";
 @import "blocks/process.scss";
+@import "blocks/about.scss";
 
 // ---------------------------------
 
