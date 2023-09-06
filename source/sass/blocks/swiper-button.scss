@@ -1,5 +1,6 @@
 .swiper-button {
   &-disabled {
     opacity: 0.3;
+    cursor: default;
   }
 }

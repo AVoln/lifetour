@@ -14,6 +14,7 @@
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
+@import "global/h2";
 
 // Blocks
 // ---------------------------------
@@ -39,6 +40,9 @@
 @import "blocks/tours-card.scss";
 @import "blocks/swiper-buttons.scss";
 @import "blocks/swiper-button.scss";
+@import "blocks/trainer.scss";
+@import "blocks/training.scss";
+@import "blocks/process.scss";
 
 // ---------------------------------
 
