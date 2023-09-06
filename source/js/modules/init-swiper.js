@@ -1,6 +1,7 @@
 const heroSwiper = document.querySelector('.hero__intro-swiper');
 const toursSwiper = document.querySelector('.tours__container-swiper');
 const trainingSwiper = document.querySelector('.training__swiper');
+const reviewsSwiper = document.querySelector('.reviews__swiper');
 
 /* eslint-disable */
 const initHeroSwiper = () => {
@@ -77,4 +78,33 @@ const initTrainingSwiper = () => {
   }
 };
 
-export { initHeroSwiper, initToursSwiper, initTrainingSwiper };
+const initReviewsSwiper = () => {
+  if (reviewsSwiper) {
+    const swiper = new Swiper(reviewsSwiper, {
+
+      simulateTouch: false,
+      navigation: {
+        nextEl: '.reviews__button--next',
+        prevEl: '.reviews__button--prev',
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+
+        768: {
+          slidesPerView: 1.3,
+          spaceBetween: 0,
+        },
+
+        1200: {
+          slidesPerView: 1.6,
+          spaceBetween: 0,
+        },
+      }
+    });
+  }
+};
+
+export { initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper };

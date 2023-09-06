@@ -1,0 +1,69 @@
+.review {
+  &__wrapper {
+    padding: 15px;
+  }
+
+  &__inner {
+    padding: 20px;
+    box-shadow: 0px 0px 15px 0px $color-box-shadow;
+    display: flex;
+    gap: 30px;
+    background-color: $color-default-white;
+
+    @include vp-767 {
+      display: block;
+    }
+  }
+
+  &__photo {
+    flex-shrink: 0;
+  }
+
+  &__photo img {
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &__text span {
+    display: inline-block;
+  }
+
+  &__text span:first-child {
+    @include vp-1200 {
+      padding: 10px 0 10px;
+    }
+
+    @include vp-1199 {
+      padding: 5px 0 10px;
+    }
+  }
+
+  &__text p {
+    font-weight: 700;
+
+    @include vp-1200 {
+      padding-top: 24px;
+      padding-bottom: 8px;
+      font-size: 13px;
+      line-height: 12px;
+    }
+
+    @include vp-1199 {
+      padding-top: 25px;
+      padding-bottom: 6px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+}
