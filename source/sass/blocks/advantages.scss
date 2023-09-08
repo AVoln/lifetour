@@ -1,0 +1,59 @@
+.advantages {
+  &__swiper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+
+    @include vp-1200 {
+      padding-bottom: 107px;
+    }
+
+    @include vp-1199 {
+      max-width: 768px;
+      padding: 0 45px 70px;
+    }
+
+    @include vp-767 {
+      gap: 30px;
+    }
+  }
+
+  & h2 {
+    padding-right: 0;
+  }
+
+  & h2::before {
+    left: auto;
+
+    @include vp-1200 {
+      right: -75px;
+    }
+
+    @include vp-1199 {
+      right: -60px;
+    }
+
+    @include vp-767 {
+      right: -15px;
+    }
+  }
+
+  &__swiper-container {
+    @include vp-1199 {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+
+  &__buttons {
+    @include vp-1200 {
+      position: static;
+    }
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+}
