@@ -3,6 +3,7 @@ const toursSwiper = document.querySelector('.tours__container-swiper');
 const trainingSwiper = document.querySelector('.training__swiper');
 const reviewsSwiper = document.querySelector('.reviews__swiper');
 const gallerySwiper = document.querySelector('.gallery__swiper');
+const advantagesSwiper = document.querySelector('.advantages__swiper');
 
 /* eslint-disable */
 const initHeroSwiper = () => {
@@ -14,7 +15,6 @@ const initHeroSwiper = () => {
       },
 
       simulateTouch: false,
-
     });
   }
 };
@@ -113,12 +113,42 @@ const initGallerySwiper = () => {
     const swiper = new Swiper(gallerySwiper, {
 
       simulateTouch: false,
+      slidesPerView: 'auto',
       navigation: {
         nextEl: '.gallery__button--next',
         prevEl: '.gallery__button--prev',
+      },
+
+      breakpoints: {
+        320: {
+          spaceBetween: 2,
+        },
+
+        768: {
+          spaceBetween: 4,
+        },
+
+        1200: {
+          spaceBetween: 4,
+        },
       },
     });
   }
 };
 
-export { initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper, initGallerySwiper };
+const initAdvantagesSwiper = () => {
+  const swiper = new Swiper(advantagesSwiper, {
+
+    loop: true,
+    freeMode: true,
+    slidesPerView: 'auto',
+    watchOverflow: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.advantages__button--next',
+      prevEl: '.advantages__button--prev',
+    }
+  });
+}
+
+export { initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper, initGallerySwiper, initAdvantagesSwiper };

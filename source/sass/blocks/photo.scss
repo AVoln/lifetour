@@ -1,0 +1,40 @@
+.photo {
+  @include vp-1200 {
+    width: 275px;
+    height: 449px;
+  }
+
+  @include vp-1199 {
+    width: 275px;
+    height: 449px;
+  }
+
+  @include vp-767 {
+    width: 159px;
+    height: 259px;
+  }
+
+  &--double {
+    @include vp-1200 {
+      width: 298px;
+    }
+
+    @include vp-1199 {
+      width: 298px;
+    }
+
+    @include vp-767 {
+      width: 172px;
+    }
+  }
+
+  &__inner--double {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    @include vp-767 {
+      gap: 3px;
+    }
+  }
+}
