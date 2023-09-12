@@ -15,7 +15,7 @@
     }
 
     @include vp-767 {
-      gap: 30px;
+      padding: 0 15px 70px;
     }
   }
 
@@ -44,6 +44,30 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
+    }
+
+    @include vp-1199 {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    @include vp-1200 {
+      display: none;
+    }
+
+    @include vp-1199 {
+      gap: 30px;
+    }
+
+    @include vp-767 {
+      gap: 15px;
     }
   }
 
