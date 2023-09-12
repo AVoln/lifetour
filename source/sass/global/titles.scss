@@ -30,7 +30,6 @@ h2 {
     color: $color-elephant;
     opacity: 0.03;
     font-weight: 800;
-    z-index: -3;
 
     @include vp-1200 {
       font-size: 55px;

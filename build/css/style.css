@@ -1497,7 +1497,6 @@ h2::before {
   color: #2d383f;
   opacity: 0.03;
   font-weight: 800;
-  z-index: -3;
 }
 @media (min-width: 1200px) {
   h2::before {
@@ -2217,41 +2216,8 @@ h2::before {
   }
 }
 .hero__intro-container {
-  background-color: #5677a2;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: auto;
-}
-@media (min-width: 1200px) {
-  .hero__intro-container--kavkaz {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kavkaz_desktop.webp);
-  }
-}
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero__intro-container--kavkaz {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kavkaz_desktop@2x.webp);
-  }
-}
-@media (max-width: 1199px) {
-  .hero__intro-container--kavkaz {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kavkaz_tablet.webp);
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
-  .hero__intro-container--kavkaz {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kavkaz_tablet@2x.webp);
-  }
-}
-@media (max-width: 767px) {
-  .hero__intro-container--kavkaz {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kavkaz_mobile.webp);
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero__intro-container--kavkaz {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kavkaz_mobile@2x.webp);
-  }
+  background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%);
 }
 @media (min-width: 1200px) {
   .hero__intro-container--kavkaz .intro__text {
@@ -2268,36 +2234,6 @@ h2::before {
 @media (max-width: 767px) {
   .hero__intro-container--kavkaz .intro__text {
     width: 100%;
-  }
-}
-@media (min-width: 1200px) {
-  .hero__intro-container--kamchatka {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kamchatka_desktop.webp);
-  }
-}
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero__intro-container--kamchatka {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kamchatka_desktop@2x.webp);
-  }
-}
-@media (max-width: 1199px) {
-  .hero__intro-container--kamchatka {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kamchatka_tablet.webp);
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
-  .hero__intro-container--kamchatka {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kamchatka_tablet@2x.webp);
-  }
-}
-@media (max-width: 767px) {
-  .hero__intro-container--kamchatka {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kamchatka_mobile.webp);
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero__intro-container--kamchatka {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/kamchatka_mobile@2x.webp);
   }
 }
 @media (min-width: 1200px) {
@@ -2323,36 +2259,6 @@ h2::before {
 @media (max-width: 767px) {
   .hero__intro-container--kamchatka .intro__text span br {
     display: inline;
-  }
-}
-@media (min-width: 1200px) {
-  .hero__intro-container--altay {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/altay_desktop.webp);
-  }
-}
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero__intro-container--altay {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/altay_desktop@2x.webp);
-  }
-}
-@media (max-width: 1199px) {
-  .hero__intro-container--altay {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/altay_tablet.webp);
-  }
-}
-@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
-  .hero__intro-container--altay {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/altay_tablet@2x.webp);
-  }
-}
-@media (max-width: 767px) {
-  .hero__intro-container--altay {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/altay_mobile.webp);
-  }
-}
-@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero__intro-container--altay {
-    background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%), url(../../img/pictures/altay_mobile@2x.webp);
   }
 }
 @media (max-width: 1199px) {
@@ -2381,6 +2287,12 @@ h2::before {
   .hero__intro-container--altay .intro__text {
     width: 100%;
   }
+}
+.hero__image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: #5677a2;
 }
 
 .header {

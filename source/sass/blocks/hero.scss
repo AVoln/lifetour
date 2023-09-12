@@ -15,40 +15,8 @@
   }
 
   &__intro-container {
-    background-color: $color-san-marino;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     height: auto;
-  }
-
-  &__intro-container--kavkaz {
-    @include vp-1200 {
-      background-image: $gradient-dark-bacground, url(../../img/pictures/kavkaz_desktop.webp);
-
-      @media (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: $gradient-dark-bacground, url(../../img/pictures/kavkaz_desktop@2x.webp);
-      }
-    }
-
-    @include vp-1199 {
-      background-image: $gradient-dark-bacground, url(../../img/pictures/kavkaz_tablet.webp);
-
-      @media (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: $gradient-dark-bacground, url(../../img/pictures/kavkaz_tablet@2x.webp);
-      }
-    }
-
-    @include vp-767 {
-      background-image: $gradient-dark-bacground, url(../../img/pictures/kavkaz_mobile.webp);
-
-      @media (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: $gradient-dark-bacground, url(../../img/pictures/kavkaz_mobile@2x.webp);
-      }
-    }
+    background-image: $gradient-dark-bacground
   }
 
   &__intro-container--kavkaz .intro__text {
@@ -64,35 +32,6 @@
 
     @include vp-767 {
       width: 100%;
-    }
-  }
-
-  &__intro-container--kamchatka {
-    @include vp-1200 {
-      background-image: $gradient-dark-bacground, url(../../img/pictures/kamchatka_desktop.webp);
-
-      @media (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: $gradient-dark-bacground, url(../../img/pictures/kamchatka_desktop@2x.webp);
-      }
-    }
-
-    @include vp-1199 {
-      background-image: $gradient-dark-bacground, url(../../img/pictures/kamchatka_tablet.webp);
-
-      @media (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: $gradient-dark-bacground, url(../../img/pictures/kamchatka_tablet@2x.webp);
-      }
-    }
-
-    @include vp-767 {
-      background-image: $gradient-dark-bacground, url(../../img/pictures/kamchatka_mobile.webp);
-
-      @media (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: $gradient-dark-bacground, url(../../img/pictures/kamchatka_mobile@2x.webp);
-      }
     }
   }
 
@@ -120,35 +59,6 @@
     }
   }
 
-  &__intro-container--altay {
-    @include vp-1200 {
-      background-image: $gradient-dark-bacground, url(../../img/pictures/altay_desktop.webp);
-
-      @media (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: $gradient-dark-bacground, url(../../img/pictures/altay_desktop@2x.webp);
-      }
-    }
-
-    @include vp-1199 {
-      background-image: $gradient-dark-bacground, url(../../img/pictures/altay_tablet.webp);
-
-      @media (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: $gradient-dark-bacground, url(../../img/pictures/altay_tablet@2x.webp);
-      }
-    }
-
-    @include vp-767 {
-      background-image: $gradient-dark-bacground, url(../../img/pictures/altay_mobile.webp);
-
-      @media (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 2dppx) {
-        background-image: $gradient-dark-bacground, url(../../img/pictures/altay_mobile@2x.webp);
-      }
-    }
-  }
-
   &__intro-container--altay .intro__title {
     @include vp-1199 {
       width: 670px;
@@ -173,5 +83,12 @@
     @include vp-767 {
       width: 100%;
     }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: $color-san-marino;
   }
 }
