@@ -2290,9 +2290,13 @@ h2::before {
 }
 .hero__image {
   position: absolute;
-  top: 0;
+  bottom: 0;
   z-index: -1;
   background-color: #5677a2;
+  width: 100%;
+}
+.hero__image img {
+  width: 100%;
 }
 
 .header {
