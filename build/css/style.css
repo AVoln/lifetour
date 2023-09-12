@@ -2706,6 +2706,7 @@ h2::before {
 }
 .intro__title h2 {
   font-weight: 800;
+  padding: 0;
 }
 @media (min-width: 1200px) {
   .intro__title h2 {
@@ -3563,6 +3564,9 @@ h2::before {
     padding: 0 0 102px;
   }
 }
+.training__text {
+  margin: 0 auto;
+}
 @media (min-width: 1200px) {
   .training__text {
     padding: 0 15px;
@@ -4375,6 +4379,9 @@ h2::before {
   }
 }
 
+.gallery__text {
+  margin: 0 auto;
+}
 @media (min-width: 1200px) {
   .gallery__text {
     max-width: 1440px;
@@ -4606,6 +4613,7 @@ h2::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 768px;
     padding: 70px 45px;
   }
 }
@@ -4762,6 +4770,9 @@ h2::before {
     line-height: 20px;
     max-width: 65%;
   }
+}
+.contacts__map {
+  position: relative;
 }
 @media (min-width: 1200px) {
   .contacts__map {

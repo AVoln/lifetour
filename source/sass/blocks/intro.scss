@@ -42,6 +42,7 @@
 
   &__title h2 {
     font-weight: 800;
+    padding: 0;
 
     @include vp-1200 {
       font-size: 77px;
