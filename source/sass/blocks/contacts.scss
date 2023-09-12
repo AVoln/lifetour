@@ -16,6 +16,7 @@
     @include vp-1199 {
       gap: 40px;
       flex-direction: column;
+      max-width: 768px;
       padding: 70px 45px;
     }
 
@@ -149,6 +150,8 @@
   }
 
   &__map {
+    position: relative;
+
     @include vp-1200 {
       margin-top: 80px;
       width: 585px;

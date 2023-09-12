@@ -1,5 +1,7 @@
 .gallery {
   &__text {
+    margin: 0 auto;
+
     @include vp-1200 {
       max-width: 1440px;
       padding: 0 120px 45px;
