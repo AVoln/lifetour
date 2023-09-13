@@ -49,6 +49,11 @@
     font-size: 12px;
     line-height: 12px;
     font-weight: 300;
+    border-bottom: 1px solid $color-transparent;
+
+    @include hover-focus {
+      border-bottom: 1px solid $color-elephant
+    }
   }
 
   &__logo {
@@ -74,20 +79,20 @@
   }
 
   &__logo-link {
-    &:hover svg {
+    @include hover-focus {
       color: $color-resolution-blue;
+      outline: none;
     }
+  }
 
-    &:active svg {
-      color: $color-navy-blue;
-    }
-
-    &:focus-visible {
+  &__logo-link svg {
+    @include hover-focus {
+      color: $color-resolution-blue;
       outline: none;
     }
 
-    &:focus-visible svg {
-      color: $color-resolution-blue;
+    @include active {
+      color: $color-navy-blue;
     }
   }
 
@@ -105,17 +110,13 @@
   }
 
   &__phone-link {
-    &:hover {
-      color: $color-resolution-blue;
-    }
-
-    &:active {
-      color: $color-navy-blue;
-    }
-
-    &:focus-visible {
+    @include hover-focus {
       color: $color-resolution-blue;
       outline: none;
+    }
+
+    @include active {
+      color: $color-navy-blue;
     }
   }
 
@@ -145,19 +146,15 @@
     color: $color-elephant;
     transition: background-color 0.3s ease;
 
-    &:hover {
+    @include hover-focus {
       border: 1px solid $color-elephant;
+      outline: none;
     }
 
-    &:active {
+    @include active {
       border: 1px solid $color-navy-blue;
       background-color: $color-navy-blue;
       color: $color-default-white;
-    }
-
-    &:focus-visible {
-      border: 1px solid $color-elephant;
-      outline: none;
     }
 
     &:disabled {

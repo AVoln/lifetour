@@ -37,6 +37,8 @@
     text-transform: uppercase;
     font-weight: 700;
     gap: 12px;
+    color: $color-elephant;
+    stroke: $color-elephant;
 
     @include vp-1200 {
       padding-top: 52px;
@@ -50,6 +52,17 @@
       padding-top: 29px;
       font-size: 14px;
       line-height: 14px;
+    }
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+      outline: none;
+      stroke: $color-resolution-blue;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+      stroke: $color-navy-blue;
     }
   }
 

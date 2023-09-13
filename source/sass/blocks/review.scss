@@ -20,6 +20,8 @@
   }
 
   &__photo img {
+    background-color: $color-elephant;
+
     @include vp-767 {
       width: 100%;
     }

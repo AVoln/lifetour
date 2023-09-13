@@ -3,22 +3,23 @@
   height: auto;
   min-height: 412px;
 
-  @include vp-1200 {}
-
-  @include vp-1199 {}
-
   &__photo {
     position: absolute;
     z-index: -1;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      background-image: $gradient-dark-bacground;
-      width: 100%;
-      height: 100%;
-    }
+  &__photo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-image: $gradient-dark-bacground;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__photo img {
+    width: 100%;
+    background-color: $color-elephant;
   }
 
   &__inner {

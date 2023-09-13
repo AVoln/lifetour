@@ -8,8 +8,26 @@
   width: 37px;
   height: 35px;
   cursor: pointer;
+  color: $color-default-white;
 
   &--next {
     transform: rotate(180deg);
+  }
+
+  @include hover-focus {
+    background-color: $color-transparent;
+    outline: none;
+    border: 1px solid $color-resolution-blue;
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    background-color: $color-resolution-blue;
+    color: $color-default-white;
+  }
+
+  &[disabled]:hover {
+    background-color: $color-navy-blue;
+    color: $color-default-white;
   }
 }
