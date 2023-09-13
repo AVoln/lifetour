@@ -13,7 +13,6 @@ const initHeroSwiper = () => {
         el: '.pagination-swiper',
         clickable: true,
       },
-
       simulateTouch: false,
     });
   }

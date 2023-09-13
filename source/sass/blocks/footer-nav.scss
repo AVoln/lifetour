@@ -37,16 +37,15 @@
       padding: 2px 5px;
     }
 
-    &:hover {
+    @include hover {
       border-bottom: 1px solid $color-elephant;
     }
 
-    &:active {
-      outline: none;
+    @include active {
       border: 1px solid $color-transparent;
     }
 
-    &:focus-visible {
+    @include focus {
       outline: none;
       border: 1px solid $color-elephant;
     }

@@ -120,6 +120,7 @@
     border: none;
     background-color: $color-navy-blue;
     color: $color-default-white;
+    user-select: none;
 
     @include vp-1200 {
       width: 238px;

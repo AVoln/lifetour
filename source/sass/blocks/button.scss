@@ -9,6 +9,8 @@
   height: 35px;
   cursor: pointer;
   color: $color-default-white;
+  user-select: none;
+  transition: background-color .3s ease;
 
   &--next {
     transform: rotate(180deg);
@@ -29,5 +31,6 @@
   &[disabled]:hover {
     background-color: $color-navy-blue;
     color: $color-default-white;
+    border: 1px solid $color-transparent;
   }
 }

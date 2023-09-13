@@ -19,6 +19,14 @@
     background-image: $gradient-dark-bacground
   }
 
+  &__intro-container .hero__intro-wrapper {
+    display: none;
+  }
+
+  &__intro-container.swiper-slide-active .hero__intro-wrapper {
+    display: block;
+  }
+
   &__intro-container--kavkaz .intro__text {
     @include vp-1200 {
       width: 400px;

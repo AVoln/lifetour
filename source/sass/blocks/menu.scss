@@ -40,8 +40,27 @@
   }
 
   &__link {
+    line-height: 24px;
+
     @include vp-1200 {
       color: $color-default-white;
+    }
+
+    @include hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    @include active {
+      border: 1px solid $color-transparent;
+    }
+
+    @include focus {
+      outline: none;
+      border: 1px solid $color-default-white;
+    }
+
+    &:disabled {
+      opacity: 0.2;
     }
   }
 }
