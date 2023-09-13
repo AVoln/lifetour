@@ -29,13 +29,13 @@
 
   &__intro-container--kavkaz .intro__text {
     @include vp-1200 {
-      width: 400px;
+      width: 450px;
       padding-top: 24px;
     }
 
     @include vp-1199 {
       width: 430px;
-      padding-top: 15px;
+      padding-top: 13px;
     }
 
     @include vp-767 {

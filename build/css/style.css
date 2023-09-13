@@ -2261,14 +2261,14 @@ h2::before {
 }
 @media (min-width: 1200px) {
   .hero__intro-container--kavkaz .intro__text {
-    width: 400px;
+    width: 450px;
     padding-top: 24px;
   }
 }
 @media (max-width: 1199px) {
   .hero__intro-container--kavkaz .intro__text {
     width: 430px;
-    padding-top: 15px;
+    padding-top: 13px;
   }
 }
 @media (max-width: 767px) {
@@ -2369,7 +2369,7 @@ h2::before {
 @media (max-width: 1199px) {
   .header {
     position: absolute;
-    top: 30px;
+    top: 33px;
     width: 100%;
     z-index: 2;
     left: 0;
@@ -2425,6 +2425,9 @@ h2::before {
 @media (max-width: 767px) {
   .header__wrapper {
     padding: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 .header__toggle {
@@ -2446,7 +2449,7 @@ h2::before {
 @media (max-width: 1199px) {
   .header__logo {
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 50%;
     right: 50%;
     width: 144px;
@@ -2461,6 +2464,7 @@ h2::before {
     -webkit-transform: translateX(-13%);
         -ms-transform: translateX(-13%);
             transform: translateX(-13%);
+    top: 0;
     left: auto;
     right: 0;
     width: 112px;
@@ -2501,13 +2505,19 @@ h2::before {
 }
 @media (max-width: 767px) {
   .header__phone-container {
-    padding: 36px 0 0;
+    padding: 40px 0 0;
   }
 }
 .header__phone {
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
+}
+@media (max-width: 1199px) {
+  .header__phone {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 @media (max-width: 767px) {
   .header__phone {
@@ -2745,6 +2755,24 @@ h2::before {
     line-height: 20px;
   }
 }
+@media (min-width: 1200px) {
+  .intro__text span {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 1199px) {
+  .intro__text span {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__text span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
 .intro__button-container {
   text-align: center;
 }
@@ -2763,6 +2791,7 @@ h2::before {
 @media (max-width: 767px) {
   .intro__button-container {
     width: 180px;
+    padding-top: 21px;
   }
 }
 .intro__button {
@@ -2894,6 +2923,9 @@ h2::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (min-width: 1200px) {
   .intro-footer {
@@ -2903,7 +2935,22 @@ h2::before {
 @media (max-width: 1199px) {
   .intro-footer {
     position: absolute;
-    bottom: 50px;
+    bottom: 88px;
+  }
+}
+@media (max-width: 767px) {
+  .intro-footer {
+    -webkit-transform: scale(0.85);
+        -ms-transform: scale(0.85);
+            transform: scale(0.85);
+    bottom: 37px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro-footer__pagination {
+    -webkit-transform: translateX(9%);
+        -ms-transform: translateX(9%);
+            transform: translateX(9%);
   }
 }
 
@@ -2930,7 +2977,7 @@ h2::before {
   }
 }
 .difficulty .difficulty__item {
-  padding: 14px 21px;
+  padding: 14px 19px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 12px;
   line-height: 12px;
@@ -3264,7 +3311,7 @@ h2::before {
 @media (min-width: 1200px) {
   .tours {
     width: 100%;
-    padding: 119px calc(50% - 600px) 102px;
+    padding: 113px calc(50% - 600px) 102px;
   }
 }
 @media (max-width: 1199px) {
@@ -3280,7 +3327,7 @@ h2::before {
 }
 @media (min-width: 1200px) {
   .tours__cards {
-    padding-top: 58px;
+    padding-top: 54px;
   }
 }
 @media (max-width: 1199px) {
@@ -3434,7 +3481,7 @@ h2::before {
   font-size: 12px;
   line-height: 12px;
   font-weight: 500;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
 }
 @media (max-width: 767px) {
   .tours-card__top {
@@ -3503,11 +3550,11 @@ h2::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 .tours-card h3 {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 26px;
   font-weight: 700;
 }
 @media (min-width: 1200px) {
@@ -3532,6 +3579,11 @@ h2::before {
   font-weight: 300;
   line-height: 12px;
   padding-top: 38px;
+}
+@media (min-width: 1200px) {
+  .tours-card__bottom {
+    padding-right: 6px;
+  }
 }
 @media (max-width: 767px) {
   .tours-card__bottom {
@@ -3563,6 +3615,12 @@ h2::before {
   top: -20px;
   left: 0;
 }
+@media (min-width: 1200px) {
+  .tours-card__difficulty p {
+    font-size: 4px;
+    line-height: 3px;
+  }
+}
 @media (max-width: 767px) {
   .tours-card__difficulty svg {
     width: 12px;
@@ -3575,7 +3633,7 @@ h2::before {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0;
   gap: 4px;
 }

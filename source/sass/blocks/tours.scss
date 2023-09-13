@@ -3,7 +3,7 @@
 
   @include vp-1200 {
     width: 100%;
-    padding: 119px calc(50% - 600px) 102px;
+    padding: 113px calc(50% - 600px) 102px;
   }
 
   @include vp-1199 {
@@ -17,7 +17,7 @@
 
   &__cards {
     @include vp-1200 {
-      padding-top: 58px;
+      padding-top: 54px;
     }
 
     @include vp-1199 {
