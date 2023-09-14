@@ -1,5 +1,5 @@
 const heroSwiper = document.querySelector('.hero__intro-swiper');
-const toursSwiper = document.querySelector('.tours__container-swiper');
+const toursSwiper = document.querySelector('.tours__swiper');
 const trainingSwiper = document.querySelector('.training__swiper');
 const reviewsSwiper = document.querySelector('.reviews__swiper');
 const gallerySwiper = document.querySelector('.gallery__swiper');
@@ -36,7 +36,7 @@ const initToursSwiper = () => {
 
         768: {
           slidesPerView: 2,
-          spaceBetween: 18,
+          spaceBetween: 17,
         },
 
         1200: {

@@ -6,6 +6,10 @@
   &__photo {
     position: absolute;
     z-index: -1;
+
+    @include vp-1199 {
+      width: 100%;
+    }
   }
 
   &__photo::after {
@@ -30,7 +34,9 @@
     height: 100%;
     padding: 28px 20px;
 
-    @include vp-1200 {}
+    @include vp-767 {
+      padding: 27px 20px;
+    }
   }
 
   &__top {
@@ -44,9 +50,22 @@
 
     @include vp-767 {
       flex-wrap: wrap;
-      column-gap: 16px;
+      column-gap: 27px;
       row-gap: 15px;
       justify-content: flex-start;
+      padding-bottom: 11px;
+    }
+  }
+
+  &__top h3 br {
+    display: none;
+
+    @include vp-1199 {
+      display: inline;
+    }
+
+    @include vp-767 {
+      display: none;
     }
   }
 
@@ -61,6 +80,12 @@
     gap: 6px;
     border: 1px solid $color-transparent;
     transition: all .3s ease;
+
+    @include vp-1199 {
+      justify-content: flex-start;
+      padding-left: 15px;
+      width: 95px;
+    }
 
     @include vp-767 {
       order: 1;
@@ -114,7 +139,7 @@
     }
 
     @include vp-767 {
-      padding-top: 31px;
+      padding-top: 28px;
     }
   }
 
@@ -143,13 +168,19 @@
     opacity: 0.2;
     top: -20px;
     left: 0;
+
+    @include vp-767 {
+      top: -15px;
+    }
   }
 
   &__difficulty p {
-    @include vp-1200 {
       font-size: 4px;
       line-height: 3px;
-    }
+
+      @include vp-767 {
+        font-size: 11px;
+      }
   }
 
   &__difficulty svg {
