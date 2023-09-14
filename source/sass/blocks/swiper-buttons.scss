@@ -1,8 +1,12 @@
 .swiper-buttons {
   display: flex;
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0;
   gap: 4px;
+
+  @include vp-1199 {
+    top: 5px;
+  }
 }
 

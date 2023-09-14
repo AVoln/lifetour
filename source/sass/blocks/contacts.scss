@@ -131,6 +131,14 @@
     }
   }
 
+  &__link {
+    border-bottom: 1px solid $color-transparent;
+
+    @include hover-focus {
+      border-bottom: 1px solid $color-elephant;
+    }
+  }
+
   &__link,
   &__info p {
     @include vp-1200 {

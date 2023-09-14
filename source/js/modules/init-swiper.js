@@ -1,5 +1,5 @@
 const heroSwiper = document.querySelector('.hero__intro-swiper');
-const toursSwiper = document.querySelector('.tours__container-swiper');
+const toursSwiper = document.querySelector('.tours__swiper');
 const trainingSwiper = document.querySelector('.training__swiper');
 const reviewsSwiper = document.querySelector('.reviews__swiper');
 const gallerySwiper = document.querySelector('.gallery__swiper');
@@ -13,7 +13,6 @@ const initHeroSwiper = () => {
         el: '.pagination-swiper',
         clickable: true,
       },
-
       simulateTouch: false,
     });
   }
@@ -37,7 +36,7 @@ const initToursSwiper = () => {
 
         768: {
           slidesPerView: 2,
-          spaceBetween: 18,
+          spaceBetween: 17,
         },
 
         1200: {
@@ -108,6 +107,23 @@ const initReviewsSwiper = () => {
   }
 };
 
+const initAdvantagesSwiper = () => {
+  const swiper = new Swiper(advantagesSwiper, {
+
+    loop: true,
+    freeMode: true,
+    slidesPerView: 'auto',
+    initialSlide: 1,
+    centeredSlides: true,
+    watchOverflow: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.advantages__button--next',
+      prevEl: '.advantages__button--prev',
+    }
+  });
+}
+
 const initGallerySwiper = () => {
   if (gallerySwiper) {
     const swiper = new Swiper(gallerySwiper, {
@@ -135,20 +151,5 @@ const initGallerySwiper = () => {
     });
   }
 };
-
-const initAdvantagesSwiper = () => {
-  const swiper = new Swiper(advantagesSwiper, {
-
-    loop: true,
-    freeMode: true,
-    slidesPerView: 'auto',
-    watchOverflow: true,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: '.advantages__button--next',
-      prevEl: '.advantages__button--prev',
-    }
-  });
-}
 
 export { initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper, initGallerySwiper, initAdvantagesSwiper };

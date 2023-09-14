@@ -63,13 +63,13 @@
   }
 
   &__input {
-    @include vp-1200{
+    @include vp-1200 {
       font-size: 16px;
       line-height: 16px;
       width: 340px;
     }
 
-    @include vp-1199{
+    @include vp-1199 {
       font-size: 14px;
       line-height: 14px;
     }
@@ -87,10 +87,31 @@
     @include vp-1199 {
       padding: 18px 15px;
     }
+
+    @include focus {
+      border: 1px solid $color-resolution-blue;
+      outline: none;
+    }
+
+    &:hover {
+      border: 1px solid $color-navy-blue;
+    }
+  }
+
+  &__input input:focus::placeholder {
+    color: $color-transparent;
+  }
+
+  &__input input:hover::placeholder {
+    color: $color-navy-blue;
   }
 
   &__input.is-invalid input {
     border: 1px solid $color-torch-red;
+  }
+
+  &__input:disabled input {
+    opacity: 0.2;
   }
 
   &__button {
@@ -99,6 +120,7 @@
     border: none;
     background-color: $color-navy-blue;
     color: $color-default-white;
+    user-select: none;
 
     @include vp-1200 {
       width: 238px;
@@ -110,6 +132,18 @@
 
     @include vp-767 {
       margin-top: 0;
+    }
+
+    @include hover-focus {
+      background-color: $color-default-white;
+      outline: none;
+      border: 1px solid $color-resolution-blue;
+      color: $color-resolution-blue;
+    }
+
+    @include active {
+      background-color: $color-resolution-blue;
+      color: $color-default-white;
     }
   }
 

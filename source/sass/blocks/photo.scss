@@ -28,6 +28,10 @@
     }
   }
 
+  &__inner img {
+    background-color: $color-elephant;
+  }
+
   &__inner--double {
     display: flex;
     flex-direction: column;
