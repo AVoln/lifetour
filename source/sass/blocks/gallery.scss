@@ -1,15 +1,16 @@
 .gallery {
-  &__text {
+  &__header {
+    position: relative;
     margin: 0 auto;
 
     @include vp-1200 {
-      max-width: 1440px;
-      padding: 0 120px 45px;
+      max-width: 1230px;
+      padding: 0 15px 45px;
     }
 
     @include vp-1199 {
-      max-width: 768px;
-      padding: 0 45px 36px;
+      max-width: 708px;
+      padding: 0 15px 36px;
     }
 
     @include vp-767 {
@@ -18,18 +19,18 @@
     }
   }
 
-  &__text p {
+  &__header p {
     @include vp-1200 {
       line-height: 24px;
       max-width: 60%;
-      padding-top: 27px;
+      padding-top: 24px;
     }
 
     @include vp-1199 {
       font-size: 14px;
       line-height: 22px;
-      max-width: 70%;
-      padding-top: 26px;
+      max-width: 60%;
+      padding-top: 25px;
     }
     @include vp-767 {
       font-size: 12px;
@@ -42,13 +43,13 @@
 
   &__buttons {
     @include vp-1200 {
-      top: 80px;
-      right: calc(50% - 590px);
+      top: 76px;
+      right: 15px;
     }
 
     @include vp-1199 {
-      top: 80px;
-      right: calc(50% - 339px);
+      top: 73px;
+      right: 15px;
     }
 
     @include vp-767 {

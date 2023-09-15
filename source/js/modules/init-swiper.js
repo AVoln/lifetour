@@ -141,11 +141,11 @@ const initGallerySwiper = () => {
         },
 
         768: {
-          spaceBetween: 4,
+          spaceBetween: 5,
         },
 
         1200: {
-          spaceBetween: 4,
+          spaceBetween: 5,
         },
       },
     });

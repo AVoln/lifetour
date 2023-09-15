@@ -4,11 +4,11 @@
   color: $color-default-white;
 
   @include vp-1200 {
-    padding: 308px 231px 307px;
+    padding: 312px 231px 306px;
   }
 
   @include vp-1199 {
-    padding: 192px 246px 183px;
+    padding: 195px 235px 183px;
   }
 
   @include vp-767 {
@@ -39,6 +39,10 @@
 
   & h2 {
     padding: 0;
+
+    @include vp-1200 {
+      padding: 0 16px 0 0;
+    }
   }
 
   & p {
@@ -46,11 +50,11 @@
     line-height: 24px;
 
     @include vp-1200 {
-      padding: 20px 0 42px;
+      padding: 16px 16px 42px 0;
     }
 
     @include vp-1199 {
-      padding: 15px 0 30px;
+      padding: 19px 0 30px;
       max-width: 295px;
       margin: 0 auto;
     }
@@ -81,11 +85,11 @@
     border: 1px solid $color-transparent;
 
     @include vp-1200 {
-      padding: 24px 30px;
+      padding: 22px 30px;
     }
 
     @include vp-1199 {
-      padding: 18px 15px;
+      padding: 15px 15px;
     }
 
     @include focus {
@@ -131,7 +135,8 @@
     }
 
     @include vp-767 {
-      margin-top: 0;
+      padding: 17px 0;
+      margin-top: 4px;
     }
 
     @include hover-focus {

@@ -3,7 +3,7 @@
 
   @include vp-1200 {
     width: 100%;
-    padding: 113px calc(50% - 600px) 116px;
+    padding: 113px calc(50% - 615px) 116px;
   }
 
   @include vp-1199 {
@@ -17,13 +17,7 @@
 
   &__buttons.swiper-buttons {
     @include vp-1200 {
-      top: 123px;
-      right: calc(50% - 600px);
-    }
-
-    @include vp-1199 {
-      top: 82px;
-      right: calc(50% - 340px);
+      right: 15px;
     }
 
     @include vp-767 {
@@ -33,7 +27,23 @@
     }
   }
 
+  &__header {
+    position: relative;
+
+    @include vp-1200 {
+      padding: 0 15px;
+      max-width: 1260px;
+      margin: 0 auto;
+    }
+  }
+
   &__swiper-container {
+    @include vp-1200 {
+      padding: 0 15px;
+      max-width: 1260px;
+      margin: 0 auto;
+    }
+
     @include vp-1199 {
       padding: 0 6px;
     }
@@ -120,12 +130,12 @@
 
     @include vp-1199 {
       right: 0;
-      top: -110px;
+      top: -95px;
     }
 
     @include vp-767 {
       right: 0;
-      top: 130px;
+      top: 137px;
     }
   }
 

@@ -1,11 +1,11 @@
 .photo {
   @include vp-1200 {
-    width: 275px;
+    width: auto;
     height: 449px;
   }
 
   @include vp-1199 {
-    width: 275px;
+    width: auto;
     height: 449px;
   }
 
@@ -35,7 +35,7 @@
   &__inner--double {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 5px;
 
     @include vp-767 {
       gap: 3px;
