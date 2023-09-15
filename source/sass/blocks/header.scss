@@ -26,7 +26,7 @@
   @include vp-767 {
     padding: 0 15px;
     top: 15px;
-    align-items: normal
+    align-items: normal;
   }
 
   &__toggle-container {
@@ -69,7 +69,7 @@
     background-color: $color-transparent;
 
     @include vp-1199 {
-      background-image: url(../../img/svg/menu.svg);
+      background-image: "url(../../img/svg/menu.svg)";
       background-repeat: no-repeat;
       background-position: top;
       width: 26px;
@@ -167,7 +167,7 @@
 
   &--menu-opened .header__toggle {
     @include vp-1199 {
-      background-image: url(../../img/svg/close.svg);
+      background-image: "url(../../img/svg/close.svg)";
       background-repeat: no-repeat;
       background-position: top;
       width: 22px;
@@ -184,6 +184,7 @@
       background-color: $color-default-white;
       top: -30px;
       z-index: -1;
+      margin-top: -2px;
     }
 
     @include vp-767 {
@@ -200,7 +201,6 @@
     @include vp-767 {
       padding: 99px 15px 50px;
     }
-
   }
 
   &--menu-opened .menu::after {

@@ -3,7 +3,6 @@ h2 {
   font-weight: 800;
   display: block;
   padding-right: 80px;
-  position: relative;
   padding-top: 10px;
 
   @include vp-1200 {
@@ -45,7 +44,6 @@ h2 {
       top: 0;
       font-size: 26px;
       line-height: 20px;
-
     }
   }
 }

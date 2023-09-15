@@ -2564,6 +2564,7 @@ h2::before {
     background-color: #ffffff;
     top: -30px;
     z-index: -1;
+    margin-top: -2px;
   }
 }
 @media (max-width: 767px) {
@@ -3276,6 +3277,7 @@ h2::before {
 }
 @media (min-width: 1200px) {
   .footer-nav__list {
+    max-width: 750px;
     gap: 21px;
   }
 }
@@ -3523,6 +3525,7 @@ h2::before {
 }
 .tours-card__photo img {
   width: 100%;
+  height: 100%;
   background-color: #2d383f;
 }
 .tours-card__inner {
