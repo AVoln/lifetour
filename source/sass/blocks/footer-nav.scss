@@ -12,6 +12,7 @@
     flex-wrap: wrap;
 
     @include vp-1200 {
+      max-width: 750px;
       gap: 21px;
     }
 
