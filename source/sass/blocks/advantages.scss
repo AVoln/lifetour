@@ -6,12 +6,12 @@
     align-items: center;
 
     @include vp-1200 {
-      padding-bottom: 107px;
+      padding-bottom: 120px;
     }
 
     @include vp-1199 {
       max-width: 768px;
-      padding: 0 45px 70px;
+      padding: 0 45px 80px;
       gap: 45px;
     }
 

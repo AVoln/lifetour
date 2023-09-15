@@ -4636,13 +4636,13 @@ h2::before {
 }
 @media (min-width: 1200px) {
   .advantages__swiper {
-    padding-bottom: 107px;
+    padding-bottom: 120px;
   }
 }
 @media (max-width: 1199px) {
   .advantages__swiper {
     max-width: 768px;
-    padding: 0 45px 70px;
+    padding: 0 45px 80px;
     gap: 45px;
   }
 }
@@ -4729,13 +4729,13 @@ h2::before {
 
 @media (min-width: 1200px) {
   .photo {
-    width: 275px;
+    width: auto;
     height: 449px;
   }
 }
 @media (max-width: 1199px) {
   .photo {
-    width: 275px;
+    width: auto;
     height: 449px;
   }
 }
@@ -4771,7 +4771,7 @@ h2::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 4px;
+  gap: 5px;
 }
 @media (max-width: 767px) {
   .photo__inner--double {
@@ -4804,15 +4804,15 @@ h2::before {
   .gallery__text p {
     line-height: 24px;
     max-width: 60%;
-    padding-top: 27px;
+    padding-top: 24px;
   }
 }
 @media (max-width: 1199px) {
   .gallery__text p {
     font-size: 14px;
     line-height: 22px;
-    max-width: 70%;
-    padding-top: 26px;
+    max-width: 60%;
+    padding-top: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -4826,13 +4826,13 @@ h2::before {
 }
 @media (min-width: 1200px) {
   .gallery__buttons {
-    top: 80px;
-    right: calc(50% - 590px);
+    top: 76px;
+    right: calc(50% - 600px);
   }
 }
 @media (max-width: 1199px) {
   .gallery__buttons {
-    top: 80px;
+    top: 73px;
     right: calc(50% - 339px);
   }
 }
@@ -4851,12 +4851,12 @@ h2::before {
 }
 @media (min-width: 1200px) {
   .form {
-    padding: 308px 231px 307px;
+    padding: 312px 231px 306px;
   }
 }
 @media (max-width: 1199px) {
   .form {
-    padding: 192px 246px 183px;
+    padding: 195px 235px 183px;
   }
 }
 @media (max-width: 767px) {
@@ -4898,18 +4898,23 @@ h2::before {
 .form h2 {
   padding: 0;
 }
+@media (min-width: 1200px) {
+  .form h2 {
+    padding: 0 16px 0 0;
+  }
+}
 .form p {
   font-size: 16px;
   line-height: 24px;
 }
 @media (min-width: 1200px) {
   .form p {
-    padding: 20px 0 42px;
+    padding: 16px 16px 42px 0;
   }
 }
 @media (max-width: 1199px) {
   .form p {
-    padding: 15px 0 30px;
+    padding: 19px 0 30px;
     max-width: 295px;
     margin: 0 auto;
   }
@@ -4941,12 +4946,12 @@ h2::before {
 }
 @media (min-width: 1200px) {
   .form__input input {
-    padding: 24px 30px;
+    padding: 22px 30px;
   }
 }
 @media (max-width: 1199px) {
   .form__input input {
-    padding: 18px 15px;
+    padding: 16px 15px;
   }
 }
 .form__input input.focus-visible:focus {
@@ -5010,11 +5015,12 @@ h2::before {
 }
 @media (max-width: 1199px) {
   .form__button {
-    margin-top: 8px;
+    margin-top: 5px;
   }
 }
 @media (max-width: 767px) {
   .form__button {
+    padding: 17px 0;
     margin-top: 0;
   }
 }
