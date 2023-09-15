@@ -28,7 +28,7 @@
     margin: 0 auto;
 
     @include vp-1200 {
-      gap: 19px;
+      justify-content: space-between;
       padding: 0 15px 34px;
       max-width: 1230px;
     }
@@ -79,21 +79,34 @@
 
     @include vp-1199 {
       gap: 98px;
-      padding-bottom: 15px;
+      padding-bottom: 17px;
     }
 
     @include vp-767 {
       flex-direction: column;
       gap: 25px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__list:nth-child(1) {
+    @include vp-1200 {
+      gap: 29px;
     }
   }
 
   &__list:nth-child(2) {
+    @include vp-1200 {
+      gap: 30px;
+    }
+
     @include vp-1199 {
       padding-top: 21px;
+      flex-direction: row-reverse;
     }
 
     @include vp-767 {
+      flex-direction: column;
       padding-top: 9px;
       gap: 25px;
     }
@@ -160,17 +173,6 @@
     }
   }
 
-
-  &__list:nth-child(2) {
-    @include vp-1199 {
-      flex-direction: row-reverse;
-    }
-
-    @include vp-767 {
-      flex-direction: column;
-    }
-  }
-
   &__item {
     position: relative;
     display: flex;
@@ -178,7 +180,7 @@
     align-items: center;
 
     @include vp-1200 {
-      width: 288px;
+      width: 278px;
       height: 100%;
     }
 
