@@ -1471,7 +1471,6 @@ h2 {
   font-weight: 800;
   display: block;
   padding-right: 80px;
-  position: relative;
   padding-top: 10px;
 }
 @media (min-width: 1200px) {
@@ -2436,7 +2435,7 @@ h2::before {
 }
 @media (max-width: 1199px) {
   .header__toggle {
-    background-image: url(../../img/svg/menu.svg);
+    background-image: "url(../../img/svg/menu.svg)";
     background-repeat: no-repeat;
     background-position: top;
     width: 26px;
@@ -2546,7 +2545,7 @@ h2::before {
 }
 @media (max-width: 1199px) {
   .header--menu-opened .header__toggle {
-    background-image: url(../../img/svg/close.svg);
+    background-image: "url(../../img/svg/close.svg)";
     background-repeat: no-repeat;
     background-position: top;
     width: 22px;
@@ -3771,8 +3770,8 @@ h2::before {
 }
 .trainer__wrapper {
   height: 100%;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(28, 51, 116, 0.1);
-          box-shadow: 0px 0px 15px 0px rgba(28, 51, 116, 0.1);
+  -webkit-box-shadow: 0 0 15px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 15px 0 rgba(28, 51, 116, 0.1);
   background-color: #ffffff;
 }
 @media (min-width: 1200px) {
@@ -4289,7 +4288,7 @@ h2::before {
 @media (min-width: 1200px) {
   .about__cloud-bcgr {
     top: -170px;
-    right: 0px;
+    right: 0;
   }
 }
 @media (max-width: 1199px) {
@@ -4496,8 +4495,8 @@ h2::before {
 }
 .review__inner {
   padding: 20px;
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(28, 51, 116, 0.1);
-          box-shadow: 0px 0px 15px 0px rgba(28, 51, 116, 0.1);
+  -webkit-box-shadow: 0 0 15px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 15px 0 rgba(28, 51, 116, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5185,9 +5184,6 @@ h2::before {
     padding-top: 10px;
   }
 }
-.contacts__map img {
-  width: 100%;
-}
 .contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5353,6 +5349,7 @@ h2::before {
   top: 0;
   left: 0;
   z-index: -1;
+  width: 100%;
 }
 
 /* @mixin hover-focus {
