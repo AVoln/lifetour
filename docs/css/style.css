@@ -2228,6 +2228,19 @@ h2::before {
   padding: 20px;
 }
 
+.hero {
+  padding-bottom: 113px;
+}
+@media (max-width: 1199px) {
+  .hero {
+    padding-bottom: 78px;
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    padding-bottom: 66px;
+  }
+}
 .hero__header-container {
   margin: 0 auto;
 }
@@ -3339,18 +3352,18 @@ h2::before {
 @media (min-width: 1200px) {
   .tours {
     width: 100%;
-    padding: 113px calc(50% - 615px) 116px;
+    padding: 0 calc(50% - 615px) 116px;
   }
 }
 @media (max-width: 1199px) {
   .tours {
     width: 100%;
-    padding: 78px calc(50% - 339px) 78px;
+    padding: 0 calc(50% - 339px) 78px;
   }
 }
 @media (max-width: 767px) {
   .tours {
-    padding: 66px calc(50% - 145px) 68px;
+    padding: 0 calc(50% - 145px) 68px;
   }
 }
 @media (min-width: 1200px) {
@@ -3360,7 +3373,7 @@ h2::before {
 }
 @media (max-width: 767px) {
   .tours__buttons.swiper-buttons {
-    top: 69px;
+    top: 3px;
     right: calc(50% - 145px);
     gap: 4px;
   }
@@ -5350,6 +5363,11 @@ h2::before {
   left: 0;
   z-index: -1;
   width: 100%;
+}
+.contacts__map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /* @mixin hover-focus {
