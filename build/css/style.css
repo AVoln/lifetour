@@ -2448,7 +2448,7 @@ h2::before {
 }
 @media (max-width: 1199px) {
   .header__toggle {
-    background-image: url(../../img/svg/menu.svg);
+    background-image: url("../../img/svg/menu.svg");
     background-repeat: no-repeat;
     background-position: top;
     width: 26px;
