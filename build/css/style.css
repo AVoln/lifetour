@@ -2448,7 +2448,7 @@ h2::before {
 }
 @media (max-width: 1199px) {
   .header__toggle {
-    background-image: "url(../../img/svg/menu.svg)";
+    background-image: url(../../img/svg/menu.svg);
     background-repeat: no-repeat;
     background-position: top;
     width: 26px;
@@ -3037,8 +3037,23 @@ h2::before {
   }
 }
 
+.audio-player__player {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 1199px) {
-  .audio-player iframe {
+  .audio-player__player {
+    top: 340px;
+  }
+}
+.audio-player img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  .audio-player img {
     top: 340px;
   }
 }

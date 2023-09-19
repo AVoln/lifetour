@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {play} from './modules/video-player';
+import {playAudio} from './modules/audio-player';
 import {initHeroSwiper, initToursSwiper, initTrainingSwiper, initReviewsSwiper, initGallerySwiper, initAdvantagesSwiper} from './modules/init-swiper';
 
 // ---------------------------------
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   play();
+  playAudio();
   initHeroSwiper();
   initToursSwiper();
   initTrainingSwiper();
