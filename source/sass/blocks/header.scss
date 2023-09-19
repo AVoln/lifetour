@@ -167,7 +167,7 @@
 
   &--menu-opened .header__toggle {
     @include vp-1199 {
-      background-image: "url(../../img/svg/close.svg)";
+      background-image: url("../../img/svg/close.svg");
       background-repeat: no-repeat;
       background-position: top;
       width: 22px;
