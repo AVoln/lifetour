@@ -4373,7 +4373,7 @@ h2::before {
 }
 @media (min-width: 1200px) {
   .about__cloud-bcgr {
-    top: -170px;
+    top: -165px;
     right: 0;
   }
 }
