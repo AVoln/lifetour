@@ -2,6 +2,7 @@
   position: relative;
   text-align: center;
   color: $color-default-white;
+  overflow: hidden;
 
   @include vp-1200 {
     padding: 312px 231px 306px;
@@ -156,8 +157,8 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
     z-index: -1;
+    width: 100%;
     background-color: $color-elephant;
   }
 

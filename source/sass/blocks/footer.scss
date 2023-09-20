@@ -104,8 +104,12 @@
   &__phone {
     font-size: 18px;
     font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 
     @include vp-1200 {
+      max-width: 320px;
       padding-left: 17px;
     }
 
