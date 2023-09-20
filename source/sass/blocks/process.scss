@@ -77,6 +77,10 @@
     gap: 20px;
     position: relative;
 
+    @include vp-1200 {
+      align-items: flex-end;
+    }
+
     @include vp-1199 {
       gap: 98px;
       padding-bottom: 17px;

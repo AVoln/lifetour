@@ -4,8 +4,6 @@ const header = document.querySelector('.header');
 const navToggle = header.querySelector('.header__toggle');
 const menu = header.querySelector('.menu');
 
-document.querySelector('body').classList.remove('nojs');
-
 const onNavOutsideClick = (evt) => {
   if (!evt.target.closest('.menu__list')) {
     closeMenu();
@@ -13,7 +11,7 @@ const onNavOutsideClick = (evt) => {
 };
 
 const onNaVLinkCloseMenu = (evt) => {
-  if (!evt.target.closest('.menu__item')) {
+  if (!evt.target.closest('.menu__link')) {
     return;
   }
   closeMenu();

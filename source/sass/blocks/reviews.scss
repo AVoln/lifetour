@@ -65,6 +65,8 @@
   }
 
   &__review-card.review.swiper-slide {
+    height: auto;
+
     @include vp-1200 {
       max-width: 820px;
     }

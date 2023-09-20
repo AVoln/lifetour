@@ -28,13 +28,14 @@
 
   &__text {
     @include vp-1200 {
-      max-width: 40%;
+      max-width: 42%;
     }
   }
 
   &__text > p {
     @include vp-1200 {
       padding-top: 22px;
+      padding-right: 20px;
       line-height: 24px;
     }
 
@@ -174,6 +175,7 @@
     @include vp-767 {
       width: 100%;
       height: 320px;
+      overflow: hidden;
     }
   }
 

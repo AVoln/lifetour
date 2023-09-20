@@ -1,7 +1,8 @@
 .menu {
   @include vp-1200 {
-    max-width: 80%;
     color: $color-default-white;
+    max-width: 636px;
+    width: 100%;
   }
 
   @include vp-1199 {
@@ -24,7 +25,9 @@
 
     @include vp-1200 {
       flex-wrap: wrap;
-      gap: 31px;
+      padding: 0 30px;
+      justify-content: space-between;
+      row-gap: 10px;
     }
 
     @include vp-1199 {
@@ -32,6 +35,8 @@
       gap: 18px;
       max-width: 678px;
       margin: 0 auto;
+      overflow: scroll;
+      max-height: calc(100vh - 20px);
     }
 
     @include vp-767 {
