@@ -195,15 +195,15 @@ function applyFocusVisiblePolyfill(scope) {
    * focus.
    */
   function addInitialPointerMoveListeners() {
-    document.addEventListener('mousemove', onInitialPointerMove);
-    document.addEventListener('mousedown', onInitialPointerMove);
-    document.addEventListener('mouseup', onInitialPointerMove);
-    document.addEventListener('pointermove', onInitialPointerMove);
-    document.addEventListener('pointerdown', onInitialPointerMove);
-    document.addEventListener('pointerup', onInitialPointerMove);
-    document.addEventListener('touchmove', onInitialPointerMove);
-    document.addEventListener('touchstart', onInitialPointerMove);
-    document.addEventListener('touchend', onInitialPointerMove);
+    document.addEventListener('mousemove', onInitialPointerMove, {passive: true});
+    document.addEventListener('mousedown', onInitialPointerMove, {passive: true});
+    document.addEventListener('mouseup', onInitialPointerMove, {passive: true});
+    document.addEventListener('pointermove', onInitialPointerMove, {passive: true});
+    document.addEventListener('pointerdown', onInitialPointerMove, {passive: true});
+    document.addEventListener('pointerup', onInitialPointerMove, {passive: true});
+    document.addEventListener('touchmove', onInitialPointerMove, {passive: true});
+    document.addEventListener('touchstart', onInitialPointerMove, {passive: true});
+    document.addEventListener('touchend', onInitialPointerMove, {passive: true});
   }
 
   function removeInitialPointerMoveListeners() {
@@ -239,11 +239,11 @@ function applyFocusVisiblePolyfill(scope) {
   // For some kinds of state, we are interested in changes at the global scope
   // only. For example, global pointer input, global key presses and global
   // visibility change should affect the state at every scope:
-  document.addEventListener('keydown', onKeyDown, true);
-  document.addEventListener('mousedown', onPointerDown, true);
-  document.addEventListener('pointerdown', onPointerDown, true);
-  document.addEventListener('touchstart', onPointerDown, true);
-  document.addEventListener('visibilitychange', onVisibilityChange, true);
+  document.addEventListener('keydown', onKeyDown, true, {passive: true});
+  document.addEventListener('mousedown', onPointerDown, true, {passive: true});
+  document.addEventListener('pointerdown', onPointerDown, true, {passive: true});
+  document.addEventListener('touchstart', onPointerDown, true, {passive: true});
+  document.addEventListener('visibilitychange', onVisibilityChange, true, {passive: true});
 
   addInitialPointerMoveListeners();
 
@@ -251,8 +251,8 @@ function applyFocusVisiblePolyfill(scope) {
   // scope. This is because focus / blur events that originate from within a
   // shadow root are not re-dispatched from the host element if it was already
   // the active element in its own scope:
-  scope.addEventListener('focus', onFocus, true);
-  scope.addEventListener('blur', onBlur, true);
+  scope.addEventListener('focus', onFocus, true, {passive: true});
+  scope.addEventListener('blur', onBlur, true, {passive: true});
 
   // We detect that a node is a ShadowRoot by ensuring that it is a
   // DocumentFragment and also has a host property. This check covers native
