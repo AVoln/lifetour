@@ -158,12 +158,12 @@
   &__media.audio-player {
     position: absolute;
     z-index: 0;
-    width: 340px;
+    width: 380px;
     height: 220px;
 
     @include vp-1200 {
       top: 300px;
-      right: 120px;
+      right: 100px;
     }
 
     @include vp-767 {

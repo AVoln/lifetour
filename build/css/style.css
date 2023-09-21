@@ -2899,13 +2899,13 @@ h2::before {
 .intro__media.audio-player {
   position: absolute;
   z-index: 0;
-  width: 340px;
+  width: 380px;
   height: 220px;
 }
 @media (min-width: 1200px) {
   .intro__media.audio-player {
     top: 300px;
-    right: 120px;
+    right: 100px;
   }
 }
 @media (max-width: 767px) {
