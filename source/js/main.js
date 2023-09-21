@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.form = form;
     form.init();
   });
-});
+}, {passive: true});
 
 // ---------------------------------
 
