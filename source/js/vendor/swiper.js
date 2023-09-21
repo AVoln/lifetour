@@ -6512,12 +6512,12 @@ const swiper = () => {
         const eventMethod = method === 'on' ? 'addEventListener' : 'removeEventListener';
 
         if (!support.touch) {
-          target[eventMethod](touchEventsDesktop.start, onDragStart, activeListener);
-          document[eventMethod](touchEventsDesktop.move, onDragMove, activeListener);
+          target[eventMethod](touchEventsDesktop.start, onDragStart, passiveListener);
+          document[eventMethod](touchEventsDesktop.move, onDragMove, passiveListener);
           document[eventMethod](touchEventsDesktop.end, onDragEnd, passiveListener);
         } else {
-          target[eventMethod](touchEventsTouch.start, onDragStart, activeListener);
-          target[eventMethod](touchEventsTouch.move, onDragMove, activeListener);
+          target[eventMethod](touchEventsTouch.start, onDragStart, passiveListener);
+          target[eventMethod](touchEventsTouch.move, onDragMove, passiveListener);
           target[eventMethod](touchEventsTouch.end, onDragEnd, passiveListener);
         }
       }
