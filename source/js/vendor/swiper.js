@@ -449,7 +449,7 @@ const swiper = () => {
               listener,
               proxyListener: handleEvent,
             });
-            el.addEventListener(event, handleEvent, capture);
+            el.addEventListener(event, handleEvent, capture, {passive: true});
           }
         } else {
           // Live events
@@ -461,7 +461,7 @@ const swiper = () => {
               listener,
               proxyListener: handleLiveEvent,
             });
-            el.addEventListener(event, handleLiveEvent, capture);
+            el.addEventListener(event, handleLiveEvent, capture, {passive: true});
           }
         }
       }
@@ -1250,7 +1250,7 @@ const swiper = () => {
                 supportsPassive = true;
               },
             });
-            window.addEventListener('testPassiveListener', null, opts);
+            window.addEventListener('testPassiveListener', null, opts, {passive: true});
           } catch (e) {
             // No support
           }
@@ -1405,13 +1405,13 @@ const swiper = () => {
           return;
         }
 
-        window.addEventListener('resize', resizeHandler);
-        window.addEventListener('orientationchange', orientationChangeHandler);
+        window.addEventListener('resize', resizeHandler, {passive: true});
+        window.addEventListener('orientationchange', orientationChangeHandler, {passive: true});
       });
       on('destroy', () => {
         removeObserver();
-        window.removeEventListener('resize', resizeHandler);
-        window.removeEventListener('orientationchange', orientationChangeHandler);
+        window.removeEventListener('resize', resizeHandler, {passive: true});
+        window.removeEventListener('orientationchange', orientationChangeHandler, {passive: true});
       });
     }
 
@@ -2449,8 +2449,8 @@ const swiper = () => {
             };
           }
 
-          swiper.$wrapperEl[0].addEventListener('transitionend', swiper.onTranslateToWrapperTransitionEnd);
-          swiper.$wrapperEl[0].addEventListener('webkitTransitionEnd', swiper.onTranslateToWrapperTransitionEnd);
+          swiper.$wrapperEl[0].addEventListener('transitionend', swiper.onTranslateToWrapperTransitionEnd, {passive: true});
+          swiper.$wrapperEl[0].addEventListener('webkitTransitionEnd', swiper.onTranslateToWrapperTransitionEnd, {passive: true});
         }
       }
 
@@ -2710,8 +2710,8 @@ const swiper = () => {
           };
         }
 
-        swiper.$wrapperEl[0].addEventListener('transitionend', swiper.onSlideToWrapperTransitionEnd);
-        swiper.$wrapperEl[0].addEventListener('webkitTransitionEnd', swiper.onSlideToWrapperTransitionEnd);
+        swiper.$wrapperEl[0].addEventListener('transitionend', swiper.onSlideToWrapperTransitionEnd, {passive: true});
+        swiper.$wrapperEl[0].addEventListener('webkitTransitionEnd', swiper.onSlideToWrapperTransitionEnd, {passive: true});
       }
 
       return true;
@@ -3697,7 +3697,7 @@ const swiper = () => {
       swiper.onClick = onClick.bind(swiper);
 
       if (support.touch && !dummyEventAttached) {
-        document.addEventListener('touchstart', dummyEventListener);
+        document.addEventListener('touchstart', dummyEventListener, {passive: true});
         dummyEventAttached = true;
       }
 
@@ -5594,7 +5594,7 @@ const swiper = () => {
 
       function disable() {
         if (swiper.params.cssMode) {
-          swiper.wrapperEl.addEventListener(event, handle);
+          swiper.wrapperEl.addEventListener(event, handle, {passive: true});
           return true;
         }
 
@@ -8271,7 +8271,7 @@ const swiper = () => {
         scrollToSlide(0, paths.value, swiper.params.runCallbacksOnInit);
 
         if (!swiper.params.history.replaceState) {
-          window.addEventListener('popstate', setHistoryPopState);
+          window.addEventListener('popstate', setHistoryPopState, {passive: true});
         }
       };
 
@@ -8495,7 +8495,7 @@ const swiper = () => {
           run();
         } else {
           ['transitionend', 'webkitTransitionEnd'].forEach((event) => {
-            swiper.$wrapperEl[0].addEventListener(event, onTransitionEnd);
+            swiper.$wrapperEl[0].addEventListener(event, onTransitionEnd, {passive: true});
           });
         }
       }
@@ -8565,7 +8565,7 @@ const swiper = () => {
         if (swiper.params.autoplay.enabled) {
           start();
           const document = getDocument();
-          document.addEventListener('visibilitychange', onVisibilityChange);
+          document.addEventListener('visibilitychange', onVisibilityChange, {passive: true});
           attachMouseEvents();
         }
       });
