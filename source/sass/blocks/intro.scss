@@ -155,30 +155,6 @@
     }
   }
 
-  &__media.audio-player {
-    position: absolute;
-    z-index: 0;
-    width: 380px;
-    height: 220px;
-
-    @include vp-1200 {
-      top: 300px;
-      right: 100px;
-    }
-
-    @include vp-767 {
-      display: none;
-    }
-  }
-
-  &__media iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
   &__video-play-button {
     position: absolute;
     top: 50%;
