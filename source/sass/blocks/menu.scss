@@ -20,14 +20,24 @@
     line-height: 14px;
   }
 
+  &__wrapper {
+    @include vp-1199 {
+      padding: 120px 0 65px;
+    }
+
+    @include vp-767 {
+      padding: 111px 15px 45px;
+    }
+  }
+
   &__list {
     display: flex;
 
     @include vp-1200 {
       flex-wrap: wrap;
-      padding: 0 30px;
-      justify-content: space-between;
+      justify-content: center;
       row-gap: 10px;
+      column-gap: 31px;
     }
 
     @include vp-1199 {
@@ -36,7 +46,7 @@
       max-width: 678px;
       margin: 0 auto;
       overflow: scroll;
-      max-height: calc(100vh - 20px);
+      max-height: 68vh;
     }
 
     @include vp-767 {
