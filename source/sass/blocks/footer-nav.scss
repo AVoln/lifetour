@@ -1,5 +1,6 @@
 .footer-nav {
   @include vp-1200 {
+    margin: 0 auto;
     padding-right: 64px;
     width: 100%;
   }
@@ -16,7 +17,8 @@
       max-width: 594px;
       margin: 0 auto;
       row-gap: 10px;
-      justify-content: space-between;
+      column-gap: 21px;
+      justify-content: center;
     }
 
     @include vp-1199 {

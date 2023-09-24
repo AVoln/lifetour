@@ -1,4 +1,18 @@
 .audio-player {
+  position: absolute;
+  z-index: 0;
+  width: 380px;
+  height: 220px;
+
+  @include vp-1200 {
+    top: 300px;
+    right: 80px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+
   &__player {
     position: relative;
     width: 100%;
@@ -6,17 +20,30 @@
     cursor: pointer;
 
     @include vp-1199 {
-      top: 340px;
+      top: 352px;
+    }
+
+    &[data-state="ready"] img {
+      display: none;
+    }
+  }
+
+  &__player iframe {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 100%;
+    height: 100%;
+
+    @include vp-1199 {
+      right: 0;
     }
   }
 
   & img {
     position: absolute;
     top: 0;
+    right: 20px;
     z-index: -1;
-
-    @include vp-1199 {
-      top: 340px;
-    }
   }
 }
